@@ -79,7 +79,7 @@ black add-genesis-account $KEY 851201264446789000000000000afury --keyring-backen
 echo $KEYRING
 echo $KEY
 # Sign genesis transaction
-black gentx $KEY 100000000000000000000000afury --keyring-backend $KEYRING --chain-id $CHAINID
+black gentx $KEY 100000000000000000000000afury --keyring-backend $KEYRING --chain-id $CHAINID --ip 34.165.151.138
 #black gentx $KEY2 1000000000000000000000afury --keyring-backend $KEYRING --chain-id $CHAINID
 
 # Collect genesis tx
