@@ -69,13 +69,6 @@ fi
 # Allocate genesis accounts (cosmos formatted addresses)
 black add-genesis-account $KEY 851201264446789000000000000ablack --keyring-backend $KEYRING
 
-# Update total supply with claim values
-validators_supply=$(cat $HOME/.black/config/genesis.json | jq -r '.app_state["bank"]["supply"][0]["amount"]')
-# Bc is required to add this big numbers
-total_supply=$(bc <<< "$amount_to_claim+$validators_supply")
-total_supply=420000000000000000000000000
-cat $HOME/.black/config/genesis.json | jq -r --arg total_supply "$total_supply" '.app_state["bank"]["supply"][0]["amount"]=$total_supply' > $HOME/.black/config/tmp_genesis.json && mv $HOME/.black/config/tmp_genesis.json $HOME/.black/config/genesis.json
-
 echo $KEYRING
 echo $KEY
 # Sign genesis transaction
