@@ -70,7 +70,7 @@ init_func() {
     "$PWD"/build/black keys add $KEY"$i" --keyring-backend test --home "$DATA_DIR$i" --no-backup --algo "eth_secp256k1"
     "$PWD"/build/black init $MONIKER --chain-id $CHAINID --home "$DATA_DIR$i"
     "$PWD"/build/black add-genesis-account \
-    "$("$PWD"/build/black keys show "$KEY$i" --keyring-backend test -a --home "$DATA_DIR$i")" 1000000000000000000afury,1000000000000000000stake \
+    "$("$PWD"/build/black keys show "$KEY$i" --keyring-backend test -a --home "$DATA_DIR$i")" 1000000000000000000ablack,1000000000000000000stake \
     --keyring-backend test --home "$DATA_DIR$i"
     "$PWD"/build/black gentx "$KEY$i" 1000000000000000000stake --chain-id $CHAINID --keyring-backend test --home "$DATA_DIR$i"
     "$PWD"/build/black collect-gentxs --home "$DATA_DIR$i"

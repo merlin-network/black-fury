@@ -59,14 +59,14 @@ func (suite *IBCTestingSuite) SetupTest() {
 	suite.coordinator.CommitNBlocks(suite.IBCCosmosChain, 2)
 
 	// Mint coins locked on the black account generated with secp.
-	coinblack := sdk.NewCoin("afury", sdk.NewInt(10000))
+	coinblack := sdk.NewCoin("ablack", sdk.NewInt(10000))
 	coins := sdk.NewCoins(coinblack)
 	err := suite.blackChain.App.(*app.Black).BankKeeper.MintCoins(suite.blackChain.GetContext(), inflationtypes.ModuleName, coins)
 	suite.Require().NoError(err)
 	err = suite.blackChain.App.(*app.Black).BankKeeper.SendCoinsFromModuleToAccount(suite.blackChain.GetContext(), inflationtypes.ModuleName, suite.IBCOsmosisChain.SenderAccount.GetAddress(), coins)
 	suite.Require().NoError(err)
 
-	// Mint coins on the osmosis side which we'll use to unlock our afury
+	// Mint coins on the osmosis side which we'll use to unlock our ablack
 	coinOsmo := sdk.NewCoin("uosmo", sdk.NewInt(10))
 	coins = sdk.NewCoins(coinOsmo)
 	err = suite.IBCOsmosisChain.GetSimApp().BankKeeper.MintCoins(suite.IBCOsmosisChain.GetContext(), minttypes.ModuleName, coins)
@@ -74,7 +74,7 @@ func (suite *IBCTestingSuite) SetupTest() {
 	err = suite.IBCOsmosisChain.GetSimApp().BankKeeper.SendCoinsFromModuleToAccount(suite.IBCOsmosisChain.GetContext(), minttypes.ModuleName, suite.IBCOsmosisChain.SenderAccount.GetAddress(), coins)
 	suite.Require().NoError(err)
 
-	// Mint coins on the cosmos side which we'll use to unlock our afury
+	// Mint coins on the cosmos side which we'll use to unlock our ablack
 	coinAtom := sdk.NewCoin("uatom", sdk.NewInt(10))
 	coins = sdk.NewCoins(coinAtom)
 	err = suite.IBCCosmosChain.GetSimApp().BankKeeper.MintCoins(suite.IBCCosmosChain.GetContext(), minttypes.ModuleName, coins)
@@ -113,11 +113,11 @@ var (
 	}
 	uatomIbcdenom = uatomDenomtrace.IBCDenom()
 
-	afuryDenomtrace = transfertypes.DenomTrace{
+	ablackDenomtrace = transfertypes.DenomTrace{
 		Path:      "transfer/channel-0",
-		BaseDenom: "afury",
+		BaseDenom: "ablack",
 	}
-	afuryIbcdenom = afuryDenomtrace.IBCDenom()
+	ablackIbcdenom = ablackDenomtrace.IBCDenom()
 
 	uatomOsmoDenomtrace = transfertypes.DenomTrace{
 		Path:      "transfer/channel-0/transfer/channel-1",

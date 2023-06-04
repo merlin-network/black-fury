@@ -11,7 +11,7 @@ echo "init black with moniker=$MONIKER and chain-id=$CHAINID"
 ./black init $MONIKER --chain-id $CHAINID --home $DATA_DIR
 echo "prepare genesis: Allocate genesis accounts"
 ./black add-genesis-account \
-"$(./black keys show $KEY -a --home $DATA_DIR --keyring-backend test)" 1000000000000000000afury,1000000000000000000stake \
+"$(./black keys show $KEY -a --home $DATA_DIR --keyring-backend test)" 1000000000000000000ablack,1000000000000000000stake \
 --home $DATA_DIR --keyring-backend test
 echo "prepare genesis: Sign genesis transaction"
 ./black gentx $KEY 1000000000000000000stake --keyring-backend test --home $DATA_DIR --keyring-backend test --chain-id $CHAINID

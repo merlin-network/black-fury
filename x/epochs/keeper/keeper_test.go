@@ -74,7 +74,7 @@ func (suite *KeeperTestSuite) DoSetupTest(t require.TestingT) {
 	require.NoError(t, err)
 
 	suite.address = common.BytesToAddress(priv.PubKey().Address().Bytes())
-	suite.denom = "afury"
+	suite.denom = "ablack"
 
 	// consensus key
 	privCons, err := ethsecp256k1.GenerateKey()

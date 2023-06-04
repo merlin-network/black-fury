@@ -25,12 +25,12 @@ black keys add $KEY --keyring-backend $KEYRING --algo $KEYALGO
 # Set moniker and chain-id for black (Moniker can be anything, chain-id must be an integer)
 black init $MONIKER --chain-id $CHAINID
 
-# Change parameter token denominations to afury
-cat $HOME/.black/config/genesis.json | jq '.app_state["staking"]["params"]["bond_denom"]="afury"' > $HOME/.black/config/tmp_genesis.json && mv $HOME/.black/config/tmp_genesis.json $HOME/.black/config/genesis.json
-cat $HOME/.black/config/genesis.json | jq '.app_state["crisis"]["constant_fee"]["denom"]="afury"' > $HOME/.black/config/tmp_genesis.json && mv $HOME/.black/config/tmp_genesis.json $HOME/.black/config/genesis.json
-cat $HOME/.black/config/genesis.json | jq '.app_state["gov"]["deposit_params"]["min_deposit"][0]["denom"]="afury"' > $HOME/.black/config/tmp_genesis.json && mv $HOME/.black/config/tmp_genesis.json $HOME/.black/config/genesis.json
-cat $HOME/.black/config/genesis.json | jq '.app_state["evm"]["params"]["evm_denom"]="afury"' > $HOME/.black/config/tmp_genesis.json && mv $HOME/.black/config/tmp_genesis.json $HOME/.black/config/genesis.json
-cat $HOME/.black/config/genesis.json | jq '.app_state["inflation"]["params"]["mint_denom"]="afury"' > $HOME/.black/config/tmp_genesis.json && mv $HOME/.black/config/tmp_genesis.json $HOME/.black/config/genesis.json
+# Change parameter token denominations to ablack
+cat $HOME/.black/config/genesis.json | jq '.app_state["staking"]["params"]["bond_denom"]="ablack"' > $HOME/.black/config/tmp_genesis.json && mv $HOME/.black/config/tmp_genesis.json $HOME/.black/config/genesis.json
+cat $HOME/.black/config/genesis.json | jq '.app_state["crisis"]["constant_fee"]["denom"]="ablack"' > $HOME/.black/config/tmp_genesis.json && mv $HOME/.black/config/tmp_genesis.json $HOME/.black/config/genesis.json
+cat $HOME/.black/config/genesis.json | jq '.app_state["gov"]["deposit_params"]["min_deposit"][0]["denom"]="ablack"' > $HOME/.black/config/tmp_genesis.json && mv $HOME/.black/config/tmp_genesis.json $HOME/.black/config/genesis.json
+cat $HOME/.black/config/genesis.json | jq '.app_state["evm"]["params"]["evm_denom"]="ablack"' > $HOME/.black/config/tmp_genesis.json && mv $HOME/.black/config/tmp_genesis.json $HOME/.black/config/genesis.json
+cat $HOME/.black/config/genesis.json | jq '.app_state["inflation"]["params"]["mint_denom"]="ablack"' > $HOME/.black/config/tmp_genesis.json && mv $HOME/.black/config/tmp_genesis.json $HOME/.black/config/genesis.json
 
 # Set gas limit in genesis
 cat $HOME/.black/config/genesis.json | jq '.consensus_params["block"]["max_gas"]="10000000"' > $HOME/.black/config/tmp_genesis.json && mv $HOME/.black/config/tmp_genesis.json $HOME/.black/config/genesis.json
@@ -50,7 +50,7 @@ cat $HOME/.black/config/genesis.json | jq '.consensus_params["block"]["max_gas"]
 
 # # Claim module account:
 # # 0xA61808Fe40fEb8B3433778BBC2ecECCAA47c8c47 || black15cvq3ljql6utxseh0zau9m8ve2j8erz84vyscz
-# cat $HOME/.black/config/genesis.json | jq -r --arg amount_to_claim "$amount_to_claim" '.app_state["bank"]["balances"] += [{"address":"black15cvq3ljql6utxseh0zau9m8ve2j8erz84vyscz","coins":[{"denom":"afury", "amount":$amount_to_claim}]}]' > $HOME/.black/config/tmp_genesis.json && mv $HOME/.black/config/tmp_genesis.json $HOME/.black/config/genesis.json
+# cat $HOME/.black/config/genesis.json | jq -r --arg amount_to_claim "$amount_to_claim" '.app_state["bank"]["balances"] += [{"address":"black15cvq3ljql6utxseh0zau9m8ve2j8erz84vyscz","coins":[{"denom":"ablack", "amount":$amount_to_claim}]}]' > $HOME/.black/config/tmp_genesis.json && mv $HOME/.black/config/tmp_genesis.json $HOME/.black/config/genesis.json
 
 # disable produce empty block
 if [[ "$OSTYPE" == "darwin"* ]]; then
@@ -84,7 +84,7 @@ if [[ $1 == "pending" ]]; then
 fi
 
 # Allocate genesis accounts (cosmos formatted addresses)
-black add-genesis-account $KEY 100000000000000000000010000afury --keyring-backend $KEYRING
+black add-genesis-account $KEY 100000000000000000000010000ablack --keyring-backend $KEYRING
 
 # Update total supply with claim values
 validators_supply=$(cat $HOME/.black/config/genesis.json | jq -r '.app_state["bank"]["supply"][0]["amount"]')
@@ -94,7 +94,7 @@ total_supply=100000000000000000000010000
 cat $HOME/.black/config/genesis.json | jq -r --arg total_supply "$total_supply" '.app_state["bank"]["supply"][0]["amount"]=$total_supply' > $HOME/.black/config/tmp_genesis.json && mv $HOME/.black/config/tmp_genesis.json $HOME/.black/config/genesis.json
 
 # Sign genesis transaction
-black gentx $KEY 1000000000000000000000afury --keyring-backend $KEYRING --chain-id $CHAINID
+black gentx $KEY 1000000000000000000000ablack --keyring-backend $KEYRING --chain-id $CHAINID
 
 # Collect genesis tx
 black collect-gentxs
@@ -107,4 +107,4 @@ if [[ $1 == "pending" ]]; then
 fi
 
 # Start the node (remove the --pruning=nothing flag if historical queries are not needed)
-black start --pruning=nothing $TRACE --log_level $LOGLEVEL --minimum-gas-prices=0.0001afury --json-rpc.api eth,txpool,personal,net,debug,web3 --rpc.laddr "tcp://0.0.0.0:26657" --api.enable
+black start --pruning=nothing $TRACE --log_level $LOGLEVEL --minimum-gas-prices=0.0001ablack --json-rpc.api eth,txpool,personal,net,debug,web3 --rpc.laddr "tcp://0.0.0.0:26657" --api.enable

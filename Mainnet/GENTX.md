@@ -12,12 +12,12 @@ black init <node_name> --chain-id <chain_id>
 A genesis account is required to create a GENTX
 
 ```bash
-black add-genesis-account <address-or-key-name> afury --chain-id <chain-id>
+black add-genesis-account <address-or-key-name> ablack --chain-id <chain-id>
 ```
 ### Create & Submit a GENTX file + genesis.json
 A GENTX is a genesis transaction that adds a validator node to the genesis file.
 ```bash
-black gentx <key_name> <token-amount>afury --chain-id=<chain_id> --moniker=<your_moniker> --commission-max-change-rate=0.01 --commission-max-rate=0.10 --commission-rate=0.05 --details="<details here>" --security-contact="<email>" --website="<website>"
+black gentx <key_name> <token-amount>ablack --chain-id=<chain_id> --moniker=<your_moniker> --commission-max-change-rate=0.01 --commission-max-rate=0.10 --commission-rate=0.05 --details="<details here>" --security-contact="<email>" --website="<website>"
 ```
 * Fork [Black](https://github.com/merlin-network/black)
 

@@ -1,14 +1,14 @@
 accounts:
   - name: alice
-    coins: ["100000000uatom", "100000000000000000000afury"]
+    coins: ["100000000uatom", "100000000000000000000ablack"]
   - name: bob
-    coins: ["5000000000000afury"]
+    coins: ["5000000000000ablack"]
 validator:
   name: alice
-  staked: "100000000000000000000afury"
+  staked: "100000000000000000000ablack"
 faucet:
   name: bob 
-  coins: ["10afury"]
+  coins: ["10ablack"]
 build:
   binary: "black"
 init:
@@ -22,18 +22,18 @@ genesis:
   app_state:
     staking:
       params:
-        bond_denom: "afury"
+        bond_denom: "ablack"
     mint:
       params:
-        mint_denom: "afury"
+        mint_denom: "ablack"
     crisis:
       constant_fee:
-        denom: "afury"
+        denom: "ablack"
     gov:
       deposit_params:
         min_deposit:
           - amount: "10000000"
-            denom: "afury"
+            denom: "ablack"
     evm:
       params:
-        evm_denom: "afury"
+        evm_denom: "ablack"

@@ -13,7 +13,7 @@ import (
 )
 
 var _ = Describe("Recovery: Performing an IBC Transfer", Ordered, func() {
-	coinblack := sdk.NewCoin("afury", sdk.NewInt(10000))
+	coinblack := sdk.NewCoin("ablack", sdk.NewInt(10000))
 	coinOsmo := sdk.NewCoin("uosmo", sdk.NewInt(10))
 	coinAtom := sdk.NewCoin("uatom", sdk.NewInt(10))
 
@@ -30,7 +30,7 @@ var _ = Describe("Recovery: Performing an IBC Transfer", Ordered, func() {
 
 	Describe("from a non-authorized chain", func() {
 		BeforeEach(func() {
-			// params := "afury"
+			// params := "ablack"
 			// params.AuthorizedChannels = []string{}
 
 			sender = s.IBCOsmosisChain.SenderAccount.GetAddress().String()
@@ -41,7 +41,7 @@ var _ = Describe("Recovery: Performing an IBC Transfer", Ordered, func() {
 		It("should transfer and not recover tokens", func() {
 			s.SendAndReceiveMessage(s.pathOsmosisblack, s.IBCOsmosisChain, "uosmo", 10, sender, receiver, 1)
 
-			nativeblack := s.blackChain.App.(*app.Black).BankKeeper.GetBalance(s.blackChain.GetContext(), senderAcc, "afury")
+			nativeblack := s.blackChain.App.(*app.Black).BankKeeper.GetBalance(s.blackChain.GetContext(), senderAcc, "ablack")
 			Expect(nativeblack).To(Equal(coinblack))
 			ibcOsmo := s.blackChain.App.(*app.Black).BankKeeper.GetBalance(s.blackChain.GetContext(), receiverAcc, uosmoIbcdenom)
 			Expect(ibcOsmo).To(Equal(sdk.NewCoin(uosmoIbcdenom, coinOsmo.Amount)))
@@ -60,7 +60,7 @@ var _ = Describe("Recovery: Performing an IBC Transfer", Ordered, func() {
 			It("should transfer and not recover tokens", func() {
 				s.SendAndReceiveMessage(s.pathOsmosisblack, s.IBCOsmosisChain, "uosmo", 10, sender, receiver, 1)
 
-				nativeblack := s.blackChain.App.(*app.Black).BankKeeper.GetBalance(s.blackChain.GetContext(), senderAcc, "afury")
+				nativeblack := s.blackChain.App.(*app.Black).BankKeeper.GetBalance(s.blackChain.GetContext(), senderAcc, "ablack")
 				Expect(nativeblack).To(Equal(coinblack))
 				ibcOsmo := s.blackChain.App.(*app.Black).BankKeeper.GetBalance(s.blackChain.GetContext(), receiverAcc, uosmoIbcdenom)
 				Expect(ibcOsmo).To(Equal(sdk.NewCoin(uosmoIbcdenom, coinOsmo.Amount)))
@@ -85,7 +85,7 @@ var _ = Describe("Recovery: Performing an IBC Transfer", Ordered, func() {
 				It("should not transfer or recover tokens", func() {
 					s.SendAndReceiveMessage(s.pathOsmosisblack, s.IBCOsmosisChain, coinOsmo.Denom, coinOsmo.Amount.Int64(), sender, receiver, 1)
 
-					nativeblack := s.blackChain.App.(*app.Black).BankKeeper.GetBalance(s.blackChain.GetContext(), senderAcc, "afury")
+					nativeblack := s.blackChain.App.(*app.Black).BankKeeper.GetBalance(s.blackChain.GetContext(), senderAcc, "ablack")
 					Expect(nativeblack).To(Equal(coinblack))
 					ibcOsmo := s.blackChain.App.(*app.Black).BankKeeper.GetBalance(s.blackChain.GetContext(), receiverAcc, uosmoIbcdenom)
 					Expect(ibcOsmo).To(Equal(sdk.NewCoin(uosmoIbcdenom, coinOsmo.Amount)))
@@ -98,27 +98,27 @@ var _ = Describe("Recovery: Performing an IBC Transfer", Ordered, func() {
 						// fmt.Println("Sender Account Numberc: ", s.IBCOsmosisChain.SenderAccount.GetAccountNumber())
 						// fmt.Println("Sender Sequence: ", s.IBCOsmosisChain.SenderAccount.GetSequence())
 
-						// afury & ibc tokens that originated from the sender's chain
+						// ablack & ibc tokens that originated from the sender's chain
 						s.SendAndReceiveMessage(s.pathOsmosisblack, s.IBCOsmosisChain, coinOsmo.Denom, coinOsmo.Amount.Int64(), sender, receiver, 1)
 						timeout = uint64(s.blackChain.GetContext().BlockTime().Add(time.Hour * 4).Add(time.Second * -20).UnixNano())
 
 						// Escrow before relaying packets
-						balanceEscrow := s.blackChain.App.(*app.Black).BankKeeper.GetBalance(s.blackChain.GetContext(), transfertypes.GetEscrowAddress("transfer", "channel-0"), "afury")
+						balanceEscrow := s.blackChain.App.(*app.Black).BankKeeper.GetBalance(s.blackChain.GetContext(), transfertypes.GetEscrowAddress("transfer", "channel-0"), "ablack")
 						Expect(balanceEscrow).To(Equal(coinblack))
 						ibcOsmo := s.blackChain.App.(*app.Black).BankKeeper.GetBalance(s.blackChain.GetContext(), receiverAcc, uosmoIbcdenom)
 						Expect(ibcOsmo.IsZero()).To(BeTrue())
 
 						// Relay both packets that were sent in the ibc_callback
-						err := s.pathOsmosisblack.RelayPacket(CreatePacket("10000", "afury", sender, receiver, "transfer", "channel-0", "transfer", "channel-0", 1, timeout))
+						err := s.pathOsmosisblack.RelayPacket(CreatePacket("10000", "ablack", sender, receiver, "transfer", "channel-0", "transfer", "channel-0", 1, timeout))
 						s.Require().NoError(err)
 						err = s.pathOsmosisblack.RelayPacket(CreatePacket("10", "transfer/channel-0/uosmo", sender, receiver, "transfer", "channel-0", "transfer", "channel-0", 2, timeout))
 						s.Require().NoError(err)
 
-						// Check that the afury were recovered
-						nativeblack := s.blackChain.App.(*app.Black).BankKeeper.GetBalance(s.blackChain.GetContext(), senderAcc, "afury")
+						// Check that the ablack were recovered
+						nativeblack := s.blackChain.App.(*app.Black).BankKeeper.GetBalance(s.blackChain.GetContext(), senderAcc, "ablack")
 						Expect(nativeblack.IsZero()).To(BeTrue())
-						ibcblack := s.IBCOsmosisChain.GetSimApp().BankKeeper.GetBalance(s.IBCOsmosisChain.GetContext(), receiverAcc, afuryIbcdenom)
-						Expect(ibcblack).To(Equal(sdk.NewCoin(afuryIbcdenom, coinblack.Amount)))
+						ibcblack := s.IBCOsmosisChain.GetSimApp().BankKeeper.GetBalance(s.IBCOsmosisChain.GetContext(), receiverAcc, ablackIbcdenom)
+						Expect(ibcblack).To(Equal(sdk.NewCoin(ablackIbcdenom, coinblack.Amount)))
 
 						// Check that the uosmo were recovered
 						ibcOsmo = s.blackChain.App.(*app.Black).BankKeeper.GetBalance(s.blackChain.GetContext(), receiverAcc, uosmoIbcdenom)
@@ -147,16 +147,16 @@ var _ = Describe("Recovery: Performing an IBC Transfer", Ordered, func() {
 
 						// Relay both packets that were sent in the ibc_callback
 						timeout := uint64(s.blackChain.GetContext().BlockTime().Add(time.Hour * 4).Add(time.Second * -20).UnixNano())
-						err := s.pathOsmosisblack.RelayPacket(CreatePacket("10000", "afury", sender, receiver, "transfer", "channel-0", "transfer", "channel-0", 1, timeout))
+						err := s.pathOsmosisblack.RelayPacket(CreatePacket("10000", "ablack", sender, receiver, "transfer", "channel-0", "transfer", "channel-0", 1, timeout))
 						s.Require().NoError(err)
 						err = s.pathOsmosisblack.RelayPacket(CreatePacket("10", "transfer/channel-0/uosmo", sender, receiver, "transfer", "channel-0", "transfer", "channel-0", 2, timeout))
 						s.Require().NoError(err)
 
-						// afury was recovered from user address
-						nativeblack := s.blackChain.App.(*app.Black).BankKeeper.GetBalance(s.blackChain.GetContext(), senderAcc, "afury")
+						// ablack was recovered from user address
+						nativeblack := s.blackChain.App.(*app.Black).BankKeeper.GetBalance(s.blackChain.GetContext(), senderAcc, "ablack")
 						Expect(nativeblack.IsZero()).To(BeTrue())
-						ibcblack := s.IBCOsmosisChain.GetSimApp().BankKeeper.GetBalance(s.IBCOsmosisChain.GetContext(), receiverAcc, afuryIbcdenom)
-						Expect(ibcblack).To(Equal(sdk.NewCoin(afuryIbcdenom, coinblack.Amount)))
+						ibcblack := s.IBCOsmosisChain.GetSimApp().BankKeeper.GetBalance(s.IBCOsmosisChain.GetContext(), receiverAcc, ablackIbcdenom)
+						Expect(ibcblack).To(Equal(sdk.NewCoin(ablackIbcdenom, coinblack.Amount)))
 
 						// Check that the uosmo were retrieved
 						ibcOsmo := s.blackChain.App.(*app.Black).BankKeeper.GetBalance(s.blackChain.GetContext(), receiverAcc, uosmoIbcdenom)
@@ -176,10 +176,10 @@ var _ = Describe("Recovery: Performing an IBC Transfer", Ordered, func() {
 						s.Require().NoError(err)
 
 						// No further tokens recovered
-						nativeblack = s.blackChain.App.(*app.Black).BankKeeper.GetBalance(s.blackChain.GetContext(), senderAcc, "afury")
+						nativeblack = s.blackChain.App.(*app.Black).BankKeeper.GetBalance(s.blackChain.GetContext(), senderAcc, "ablack")
 						Expect(nativeblack.IsZero()).To(BeTrue())
-						ibcblack = s.IBCOsmosisChain.GetSimApp().BankKeeper.GetBalance(s.IBCOsmosisChain.GetContext(), receiverAcc, afuryIbcdenom)
-						Expect(ibcblack).To(Equal(sdk.NewCoin(afuryIbcdenom, coinblack.Amount)))
+						ibcblack = s.IBCOsmosisChain.GetSimApp().BankKeeper.GetBalance(s.IBCOsmosisChain.GetContext(), receiverAcc, ablackIbcdenom)
+						Expect(ibcblack).To(Equal(sdk.NewCoin(ablackIbcdenom, coinblack.Amount)))
 
 						ibcOsmo = s.blackChain.App.(*app.Black).BankKeeper.GetBalance(s.blackChain.GetContext(), receiverAcc, uosmoIbcdenom)
 						Expect(ibcOsmo.IsZero()).To(BeTrue())
@@ -222,18 +222,18 @@ var _ = Describe("Recovery: Performing an IBC Transfer", Ordered, func() {
 
 						// Relay packets that were sent in the ibc_callback
 						timeout := uint64(s.blackChain.GetContext().BlockTime().Add(time.Hour * 4).Add(time.Second * -20).UnixNano())
-						err := s.pathOsmosisblack.RelayPacket(CreatePacket("10000", "afury", sender, receiver, "transfer", "channel-0", "transfer", "channel-0", 1, timeout))
+						err := s.pathOsmosisblack.RelayPacket(CreatePacket("10000", "ablack", sender, receiver, "transfer", "channel-0", "transfer", "channel-0", 1, timeout))
 						s.Require().NoError(err)
 						err = s.pathOsmosisblack.RelayPacket(CreatePacket("10", "transfer/channel-0/transfer/channel-1/uatom", sender, receiver, "transfer", "channel-0", "transfer", "channel-0", 2, timeout))
 						s.Require().NoError(err)
 						err = s.pathOsmosisblack.RelayPacket(CreatePacket("10", "transfer/channel-0/uosmo", sender, receiver, "transfer", "channel-0", "transfer", "channel-0", 3, timeout))
 						s.Require().NoError(err)
 
-						// afury was recovered from user address
-						nativeblack := s.blackChain.App.(*app.Black).BankKeeper.GetBalance(s.blackChain.GetContext(), senderAcc, "afury")
+						// ablack was recovered from user address
+						nativeblack := s.blackChain.App.(*app.Black).BankKeeper.GetBalance(s.blackChain.GetContext(), senderAcc, "ablack")
 						Expect(nativeblack.IsZero()).To(BeTrue())
-						ibcblack := s.IBCOsmosisChain.GetSimApp().BankKeeper.GetBalance(s.IBCOsmosisChain.GetContext(), receiverAcc, afuryIbcdenom)
-						Expect(ibcblack).To(Equal(sdk.NewCoin(afuryIbcdenom, coinblack.Amount)))
+						ibcblack := s.IBCOsmosisChain.GetSimApp().BankKeeper.GetBalance(s.IBCOsmosisChain.GetContext(), receiverAcc, ablackIbcdenom)
+						Expect(ibcblack).To(Equal(sdk.NewCoin(ablackIbcdenom, coinblack.Amount)))
 
 						// Check that the uosmo were recovered
 						ibcOsmo := s.blackChain.App.(*app.Black).BankKeeper.GetBalance(s.blackChain.GetContext(), receiverAcc, uosmoIbcdenom)

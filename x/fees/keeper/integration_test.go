@@ -908,7 +908,7 @@ func prepareCosmosTx(priv *ethsecp256k1.PrivKey, gasPrice *sdk.Int, msgs ...sdk.
 	accountAddress := sdk.AccAddress(priv.PubKey().Address().Bytes())
 	// denom := s.app.ClaimsKeeper.GetParams(s.ctx).ClaimsDenom
 
-	denom := "afury"
+	denom := "ablack"
 	txBuilder := encodingConfig.TxConfig.NewTxBuilder()
 
 	txBuilder.SetGasLimit(1000000)
