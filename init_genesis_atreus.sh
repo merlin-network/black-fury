@@ -1,6 +1,6 @@
-KEY="samael"
-CHAINID="highbury_710-1-1"
-MONIKER="samael"
+KEY="atreus"
+CHAINID="highbury_710-1"
+MONIKER="atreus"
 KEYRING="os"
 KEYALGO="eth_secp256k1"
 LOGLEVEL="info"
@@ -81,7 +81,7 @@ black add-genesis-account $KEY 851201264446789000000000000afury --keyring-backen
 echo $KEYRING
 echo $KEY
 # Sign genesis transaction
-black gentx $KEY1 100000000000000000000000afury --keyring-backend $KEYRING --chain-id $CHAINID
+black gentx $KEY1 100000000000000000000000afury --keyring-backend $KEYRING --chain-id $CHAINID --ip 35.200.104.35
 #black gentx $KEY2 1000000000000000000000afury --keyring-backend $KEYRING --chain-id $CHAINID
 
 # Collect genesis tx

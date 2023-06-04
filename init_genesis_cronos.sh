@@ -1,6 +1,6 @@
-KEY="samael"
+KEY="cronos"
 CHAINID="highbury_710-1"
-MONIKER="samael"
+MONIKER="cronos"
 KEYRING="os"
 KEYALGO="eth_secp256k1"
 LOGLEVEL="info"
@@ -65,8 +65,6 @@ if [[ $1 == "pending" ]]; then
       sed -i 's/timeout_broadcast_tx_commit = "10s"/timeout_broadcast_tx_commit = "150s"/g' $HOME/.black/config/config.toml
   fi
 fi
-
-
 
 # Allocate genesis accounts (cosmos formatted addresses)
 black add-genesis-account $KEY 851201264446789000000000000afury --keyring-backend $KEYRING
