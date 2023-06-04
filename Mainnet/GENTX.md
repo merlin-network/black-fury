@@ -8,11 +8,6 @@
 ```bash
 black init <node_name> --chain-id <chain_id>
 ```
-* Download the [genesis file](https://github.com/merlin-network/black/raw/main/Mainnet/genesis.json)
-```bash
-wget https://github.com/merlin-network/black/raw/main/Mainnet/genesis.json -b $HOME/.black/config
-```
-
 ### Add a Genesis Account
 A genesis account is required to create a GENTX
 
@@ -26,7 +21,7 @@ black gentx <key_name> <token-amount>afury --chain-id=<chain_id> --moniker=<your
 ```
 * Fork [Black](https://github.com/merlin-network/black)
 
-* Copy the contents of `${HOME}/.black/config/gentx/gentx-XXXXXXXX.json` to `$HOME/Black/Mainnet/gentx/<yourvalidatorname>.json`
+* Copy the contents of `${HOME}/.black/config/gentx/gentx-XXXXXXXX.json` to `$HOME/black-fury/Mainnet/gentx/<yourvalidatorname>.json`
 
 * Copy the genesis.json file `${HOME}/.black/config/genesis.json` to `$HOME/Black/Mainnet/Genesis-Files/`
 
