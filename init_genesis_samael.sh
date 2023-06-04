@@ -81,7 +81,7 @@ black add-genesis-account $KEY 851201264446789000000000000afury --keyring-backen
 echo $KEYRING
 echo $KEY
 # Sign genesis transaction
-black gentx $KEY1 100000000000000000000000afury --keyring-backend $KEYRING --chain-id $CHAINID
+black gentx $KEY 100000000000000000000000afury --keyring-backend $KEYRING --chain-id $CHAINID
 #black gentx $KEY2 1000000000000000000000afury --keyring-backend $KEYRING --chain-id $CHAINID
 
 # Collect genesis tx
@@ -95,5 +95,5 @@ if [[ $1 == "pending" ]]; then
 fi
 
 # Start the node (remove the --pruning=nothing flag if historical queries are not needed)
-# black start --pruning=nothing --trace --log_level info --minimum-gas-prices=0.0001afury --json-rpc.api eth,txpool,personal,net,debug,web3 --rpc.laddr "tcp://0.0.0.0:26657" --api.enable true
+black start --pruning=nothing --trace --log_level info --minimum-gas-prices=0.0001afury --json-rpc.api eth,txpool,personal,net,debug,web3 --rpc.laddr "tcp://0.0.0.0:26657" --api.enable true
 

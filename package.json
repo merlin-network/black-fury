@@ -15,12 +15,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/black/black.git"
+    "url": "git+https://github.com/merlin-network/black-fury.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/black/black/issues"
+    "url": "https://github.com/merlin-network/black-fury/issues"
   },
-  "homepage": "https://github.com/black/black#readme"
+  "homepage": "https://github.com/merlin-network/black-fury#readme"
 }
