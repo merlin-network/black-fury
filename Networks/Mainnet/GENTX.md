@@ -7,7 +7,7 @@
 -   Initialize black node directory
 
 ```bash
-black init <node_name> --chain-id black_7700-1
+black init <node_name> --chain-id highbury_710-1
 ```
 
 -   Download the [genesis file](https://github.com/merlin-network/black/raw/genesis/Networks/Mainnet/genesis.json)
@@ -21,7 +21,7 @@ wget https://github.com/merlin-network/black/raw/genesis/Networks/Mainnet/genesi
 A GENTX is a genesis transaction that adds a validator node to the genesis file.
 
 ```bash
-black gentx <key_name> <token-amount>afury --chain-id=black_7700-1 --moniker=<your_moniker> --commission-max-change-rate=0.01 --commission-max-rate=0.10 --commission-rate=0.05 --details="<details here>" --security-contact="<email>" --website="<website>"
+black gentx <key_name> <token-amount>afury --chain-id=highbury_710-1 --moniker=<your_moniker> --commission-max-change-rate=0.01 --commission-max-rate=0.10 --commission-rate=0.05 --details="<details here>" --security-contact="<email>" --website="<website>"
 ```
 
 -   Fork [Black](https://github.com/merlin-network/black)

@@ -2,7 +2,7 @@
 
 **How to validate on the Black Mainnet**
 
-*(black_7700-1)*
+*(highbury_710-1)*
 
 > Genesis file [Published](https://github.com/merlin-network/black/raw/main/Mainnet/genesis.json)
 > Peers list [Published](https://github.com/merlin-network/black/blob/main/Mainnet/peers.txt)
@@ -88,7 +88,7 @@ Install black binary from `Black` directory:
 
 Initialize the node. Replace `<moniker>` with whatever you'd like to name your validator.
 
-`black init <moniker> --chain-id black_7700-1`
+`black init <moniker> --chain-id highbury_710-1`
 
 If this runs successfully, it should dump a blob of JSON to the terminal.
 
@@ -168,7 +168,7 @@ Modify the following items below, removing the `<>`
 
 black tx staking create-validator \
 --from <KEY_NAME> \
---chain-id black_7700-1 \
+--chain-id highbury_710-1 \
 --moniker="<VALIDATOR_NAME>" \
 --commission-max-change-rate=0.01 \
 --commission-max-rate=1.0 \
