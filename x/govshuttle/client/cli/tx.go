@@ -15,7 +15,7 @@ import (
 
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/Black-Network/Black/v6/x/govshuttle/types"
+	"github.com/merlin-network/black/v6/x/govshuttle/types"
 )
 
 var (

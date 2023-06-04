@@ -16,9 +16,9 @@ import (
 	host "github.com/cosmos/ibc-go/v3/modules/core/24-host"
 	"github.com/cosmos/ibc-go/v3/modules/core/exported"
 
-	"github.com/Black-Network/Black/v6/ibc"
-	black "github.com/Black-Network/Black/v6/types"
-	"github.com/Black-Network/Black/v6/x/recovery/types"
+	"github.com/merlin-network/black/v6/ibc"
+	black "github.com/merlin-network/black/v6/types"
+	"github.com/merlin-network/black/v6/x/recovery/types"
 )
 
 // OnRecvPacket performs an IBC receive callback. It returns the tokens that

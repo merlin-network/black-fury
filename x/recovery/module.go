@@ -19,9 +19,9 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/module"
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 
-	"github.com/Black-Network/Black/v6/x/recovery/client/cli"
-	"github.com/Black-Network/Black/v6/x/recovery/keeper"
-	"github.com/Black-Network/Black/v6/x/recovery/types"
+	"github.com/merlin-network/black/v6/x/recovery/client/cli"
+	"github.com/merlin-network/black/v6/x/recovery/keeper"
+	"github.com/merlin-network/black/v6/x/recovery/types"
 )
 
 // type check to ensure the interface is properly implemented

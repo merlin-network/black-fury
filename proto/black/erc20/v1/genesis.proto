@@ -4,7 +4,7 @@ package black.erc20.v1;
 import "black/erc20/v1/erc20.proto";
 import "gogoproto/gogo.proto";
 
-option go_package = "github.com/Black-Network/Black/v6/x/erc20/types";
+option go_package = "github.com/merlin-network/black/v6/x/erc20/types";
 
 // GenesisState defines the module's genesis state.
 message GenesisState {

@@ -3,8 +3,8 @@ package keeper_test
 import (
 	"strings"
 
-	_ "github.com/Black-Network/Black/v6/x/csr/keeper"
-	"github.com/Black-Network/Black/v6/x/csr/types"
+	_ "github.com/merlin-network/black/v6/x/csr/keeper"
+	"github.com/merlin-network/black/v6/x/csr/types"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/evmos/ethermint/tests"
 	"github.com/evmos/ethermint/x/evm/statedb"

@@ -12,8 +12,8 @@ import (
 	"github.com/evmos/ethermint/tests"
 	feemarkettypes "github.com/evmos/ethermint/x/feemarket/types"
 
-	"github.com/Black-Network/Black/v6/app"
-	"github.com/Black-Network/Black/v6/x/fees/types"
+	"github.com/merlin-network/black/v6/app"
+	"github.com/merlin-network/black/v6/x/fees/types"
 	"github.com/cosmos/cosmos-sdk/baseapp"
 	"github.com/cosmos/cosmos-sdk/crypto/keyring"
 	sdk "github.com/cosmos/cosmos-sdk/types"

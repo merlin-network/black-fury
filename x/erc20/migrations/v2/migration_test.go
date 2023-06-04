@@ -12,9 +12,9 @@ import (
 
 	"github.com/evmos/ethermint/encoding"
 
-	"github.com/Black-Network/Black/v6/app"
-	v2 "github.com/Black-Network/Black/v6/x/erc20/migrations/v2"
-	erc20types "github.com/Black-Network/Black/v6/x/erc20/types"
+	"github.com/merlin-network/black/v6/app"
+	v2 "github.com/merlin-network/black/v6/x/erc20/migrations/v2"
+	erc20types "github.com/merlin-network/black/v6/x/erc20/types"
 )
 
 func TestUpdateParams(t *testing.T) {

@@ -22,9 +22,9 @@ import (
 	"github.com/evmos/ethermint/crypto/ethsecp256k1"
 	evm "github.com/evmos/ethermint/x/evm/types"
 
-	"github.com/Black-Network/Black/v6/app"
-	epochstypes "github.com/Black-Network/Black/v6/x/epochs/types"
-	"github.com/Black-Network/Black/v6/x/inflation/types"
+	"github.com/merlin-network/black/v6/app"
+	epochstypes "github.com/merlin-network/black/v6/x/epochs/types"
+	"github.com/merlin-network/black/v6/x/inflation/types"
 
 	stakingkeeper "github.com/cosmos/cosmos-sdk/x/staking/keeper"
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"

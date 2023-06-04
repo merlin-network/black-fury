@@ -8,9 +8,9 @@ import (
 	evmtypes "github.com/evmos/ethermint/x/evm/types"
 	"github.com/stretchr/testify/mock"
 
-	"github.com/Black-Network/Black/v6/contracts"
-	"github.com/Black-Network/Black/v6/x/erc20/keeper"
-	"github.com/Black-Network/Black/v6/x/erc20/types"
+	"github.com/merlin-network/black/v6/contracts"
+	"github.com/merlin-network/black/v6/x/erc20/keeper"
+	"github.com/merlin-network/black/v6/x/erc20/types"
 )
 
 func (suite *KeeperTestSuite) TestQueryERC20() {

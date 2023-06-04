@@ -9,7 +9,7 @@ Black is written in Go.  We prefer to use the latest version of go because this 
 * Mac or Linux, no Windows
 
 ```bash
-git clone https://github.com/Black-Network/Black
+git clone https://github.com/merlin-network/black
 cd Black
 go install ./...
 code .

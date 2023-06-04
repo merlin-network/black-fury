@@ -18,9 +18,9 @@ import (
 	bankkeeper "github.com/cosmos/cosmos-sdk/x/bank/keeper"
 	stakingkeeper "github.com/cosmos/cosmos-sdk/x/staking/keeper"
 
-	"github.com/Black-Network/Black/v6/x/vesting/client/cli"
-	"github.com/Black-Network/Black/v6/x/vesting/keeper"
-	"github.com/Black-Network/Black/v6/x/vesting/types"
+	"github.com/merlin-network/black/v6/x/vesting/client/cli"
+	"github.com/merlin-network/black/v6/x/vesting/keeper"
+	"github.com/merlin-network/black/v6/x/vesting/types"
 )
 
 var (

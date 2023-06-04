@@ -3,13 +3,13 @@ package keeper
 import (
 	"math/big"
 
-	"github.com/Black-Network/Black/v6/contracts"
+	"github.com/merlin-network/black/v6/contracts"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/Black-Network/Black/v6/x/govshuttle/types"
+	"github.com/merlin-network/black/v6/x/govshuttle/types"
 
-	erc20types "github.com/Black-Network/Black/v6/x/erc20/types"
+	erc20types "github.com/merlin-network/black/v6/x/erc20/types"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/crypto"
 )

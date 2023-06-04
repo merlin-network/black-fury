@@ -6,8 +6,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/Black-Network/Black/v6/contracts"
-	"github.com/Black-Network/Black/v6/x/csr/types"
+	"github.com/merlin-network/black/v6/contracts"
+	"github.com/merlin-network/black/v6/x/csr/types"
 	"github.com/ethereum/go-ethereum/accounts/abi"
 	"github.com/ethereum/go-ethereum/core"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"

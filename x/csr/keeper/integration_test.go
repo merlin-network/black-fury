@@ -8,8 +8,8 @@ import (
 
 	. "github.com/onsi/ginkgo/v2"
 
-	"github.com/Black-Network/Black/v6/contracts"
-	"github.com/Black-Network/Black/v6/testutil"
+	"github.com/merlin-network/black/v6/contracts"
+	"github.com/merlin-network/black/v6/testutil"
 	"github.com/ethereum/go-ethereum/common"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 	"github.com/evmos/ethermint/crypto/ethsecp256k1"

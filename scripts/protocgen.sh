@@ -51,5 +51,5 @@ echo "3"
 
 
 # move proto files to the right places
-cp -r github.com/Black-Network/Black/v6/x/* x/
+cp -r github.com/merlin-network/black/v6/x/* x/
 rm -rf github.com

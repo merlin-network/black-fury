@@ -11,7 +11,7 @@ import (
 	"github.com/evmos/ethermint/tests"
 	"github.com/evmos/ethermint/x/evm/statedb"
 
-	"github.com/Black-Network/Black/v6/x/fees/types"
+	"github.com/merlin-network/black/v6/x/fees/types"
 )
 
 func (suite *KeeperTestSuite) TestRegisterFee() {

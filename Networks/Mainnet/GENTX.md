@@ -10,10 +10,10 @@
 black init <node_name> --chain-id black_7700-1
 ```
 
--   Download the [genesis file](https://github.com/Black-Network/Black/raw/genesis/Networks/Mainnet/genesis.json)
+-   Download the [genesis file](https://github.com/merlin-network/black/raw/genesis/Networks/Mainnet/genesis.json)
 
 ```bash
-wget https://github.com/Black-Network/Black/raw/genesis/Networks/Mainnet/genesis.json -b $HOME/.black/config
+wget https://github.com/merlin-network/black/raw/genesis/Networks/Mainnet/genesis.json -b $HOME/.black/config
 ```
 
 ### Create & Submit a GENTX file + genesis.json
@@ -24,11 +24,11 @@ A GENTX is a genesis transaction that adds a validator node to the genesis file.
 black gentx <key_name> <token-amount>afury --chain-id=black_7700-1 --moniker=<your_moniker> --commission-max-change-rate=0.01 --commission-max-rate=0.10 --commission-rate=0.05 --details="<details here>" --security-contact="<email>" --website="<website>"
 ```
 
--   Fork [Black](https://github.com/Black-Network/Black)
+-   Fork [Black](https://github.com/merlin-network/black)
 
 -   Copy the contents of `${HOME}/.black/config/gentx/gentx-XXXXXXXX.json` to `$HOME/Black/Mainnet/Gentx/<yourvalidatorname>.json`
 
--   Create a pull request to the genesis branch of the [repository](https://github.com/Black-Network/Black/Mainnet/gentx)
+-   Create a pull request to the genesis branch of the [repository](https://github.com/merlin-network/black/Mainnet/gentx)
 
 ### Restarting Your Node
 
@@ -90,7 +90,7 @@ mv $HOME/go/bin/black /usr/bin/
 
 2. Download the old genesis file
 
--   `wget https://github.com/Black-Network/Black/raw/main/Mainnet/genesis.json -b $HOME/.black/config/`
+-   `wget https://github.com/merlin-network/black/raw/main/Mainnet/genesis.json -b $HOME/.black/config/`
 
 3. Restart your node
 

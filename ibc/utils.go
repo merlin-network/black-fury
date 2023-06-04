@@ -7,7 +7,7 @@ import (
 	transfertypes "github.com/cosmos/ibc-go/v3/modules/apps/transfer/types"
 	channeltypes "github.com/cosmos/ibc-go/v3/modules/core/04-channel/types"
 
-	black "github.com/Black-Network/Black/v6/types"
+	black "github.com/merlin-network/black/v6/types"
 )
 
 // GetTransferSenderRecipient returns the sender and recipient sdk.AccAddresses

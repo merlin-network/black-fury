@@ -1,7 +1,7 @@
 package v4
 
 import (
-	shuttleKeeper "github.com/Black-Network/Black/v6/x/govshuttle/keeper"
+	shuttleKeeper "github.com/merlin-network/black/v6/x/govshuttle/keeper"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
 	upgradetypes "github.com/cosmos/cosmos-sdk/x/upgrade/types"

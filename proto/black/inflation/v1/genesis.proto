@@ -5,7 +5,7 @@ import "gogoproto/gogo.proto";
 
 import "black/inflation/v1/inflation.proto";
 
-option go_package = "github.com/Black-Network/Black/v6/x/inflation/types";
+option go_package = "github.com/merlin-network/black/v6/x/inflation/types";
 
 // GenesisState defines the inflation module's genesis state.
 message GenesisState {

@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 	"path/filepath"
 
-	"github.com/Black-Network/Black/v6/x/govshuttle/types"
+	"github.com/merlin-network/black/v6/x/govshuttle/types"
 	"github.com/cosmos/cosmos-sdk/codec"
 )
 

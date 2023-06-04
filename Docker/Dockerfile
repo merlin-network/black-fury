@@ -24,7 +24,7 @@ RUN apt-get update &&\
 RUN snap install go --classic
 
 # builds out black
-RUN git clone https://github.com/Black-Network/Black-Testnet
+RUN git clone https://github.com/merlin-network/black-Testnet
 WORKDIR /Black-Testnet/cmd/black
 RUN go install -tags ledger ./... &&\
     mv $HOME/go/bin/black /usr/bin/
@@ -38,9 +38,9 @@ RUN black keys add $KEY_NAME
 RUN black init $MONIKER --chain-id black_9624-1
 
 # get genesis file
-RUN wget https://github.com/Black-Network/Black-Testnet-v2/raw/main/genesis.json -P $HOME/.black/config/
+RUN wget https://github.com/merlin-network/black-Testnet-v2/raw/main/genesis.json -P $HOME/.black/config/
 RUN sed -i 's/minimum-gas-prices = ""/minimum-gas-prices = "0.0001afury"/g' $HOME/.black/config/app.toml
-RUN wget https://github.com/Black-Network/Black-Testnet-v2/raw/main/Docker/black.service -P $HOME/systemd/system/
+RUN wget https://github.com/merlin-network/black-Testnet-v2/raw/main/Docker/black.service -P $HOME/systemd/system/
 
 # run black
 WORKDIR /Black-Testnet/cmd/black

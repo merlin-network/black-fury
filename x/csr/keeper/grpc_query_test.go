@@ -1,7 +1,7 @@
 package keeper_test
 
 import (
-	"github.com/Black-Network/Black/v6/x/csr/types"
+	"github.com/merlin-network/black/v6/x/csr/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/query"
 	"github.com/evmos/ethermint/tests"

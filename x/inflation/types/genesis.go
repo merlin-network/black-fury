@@ -3,7 +3,7 @@ package types
 import (
 	fmt "fmt"
 
-	epochstypes "github.com/Black-Network/Black/v6/x/epochs/types"
+	epochstypes "github.com/merlin-network/black/v6/x/epochs/types"
 )
 
 // NewGenesisState creates a new GenesisState object

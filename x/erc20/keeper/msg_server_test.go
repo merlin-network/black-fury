@@ -9,8 +9,8 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 
-	"github.com/Black-Network/Black/v6/x/erc20/keeper"
-	"github.com/Black-Network/Black/v6/x/erc20/types"
+	"github.com/merlin-network/black/v6/x/erc20/keeper"
+	"github.com/merlin-network/black/v6/x/erc20/types"
 	"github.com/evmos/ethermint/x/evm/statedb"
 	evmtypes "github.com/evmos/ethermint/x/evm/types"
 )

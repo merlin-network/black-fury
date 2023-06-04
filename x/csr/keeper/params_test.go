@@ -1,7 +1,7 @@
 package keeper_test
 
 import (
-	_ "github.com/Black-Network/Black/v6/x/csr/keeper"
+	_ "github.com/merlin-network/black/v6/x/csr/keeper"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )
 

@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	epochstypes "github.com/Black-Network/Black/v6/x/epochs/types"
-	"github.com/Black-Network/Black/v6/x/inflation/types"
+	epochstypes "github.com/merlin-network/black/v6/x/epochs/types"
+	"github.com/merlin-network/black/v6/x/inflation/types"
 	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	bankKeeper "github.com/cosmos/cosmos-sdk/x/bank/keeper"

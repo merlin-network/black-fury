@@ -12,9 +12,9 @@ import (
 
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/Black-Network/Black/v6/x/govshuttle/client/cli"
-	"github.com/Black-Network/Black/v6/x/govshuttle/keeper"
-	"github.com/Black-Network/Black/v6/x/govshuttle/types"
+	"github.com/merlin-network/black/v6/x/govshuttle/client/cli"
+	"github.com/merlin-network/black/v6/x/govshuttle/keeper"
+	"github.com/merlin-network/black/v6/x/govshuttle/types"
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/codec"
 	cdctypes "github.com/cosmos/cosmos-sdk/codec/types"

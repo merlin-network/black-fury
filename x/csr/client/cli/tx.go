@@ -5,7 +5,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/Black-Network/Black/v6/x/csr/types"
+	"github.com/merlin-network/black/v6/x/csr/types"
 	"github.com/cosmos/cosmos-sdk/client"
 )
 

@@ -10,9 +10,9 @@ import (
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 
-	"github.com/Black-Network/Black/v6/app"
-	"github.com/Black-Network/Black/v6/testutil"
-	"github.com/Black-Network/Black/v6/x/fees/types"
+	"github.com/merlin-network/black/v6/app"
+	"github.com/merlin-network/black/v6/testutil"
+	"github.com/merlin-network/black/v6/x/fees/types"
 	"github.com/cosmos/cosmos-sdk/client/tx"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/tx/signing"

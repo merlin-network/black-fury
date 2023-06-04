@@ -4,7 +4,7 @@ package black.govshuttle.v1;
 import "gogoproto/gogo.proto";
 import "cosmos_proto/cosmos.proto";
 
-option go_package = "github.com/Black-Network/Black/v6/x/govshuttle/types";
+option go_package = "github.com/merlin-network/black/v6/x/govshuttle/types";
 
 // Params defines the parameters for the module.
 message Params {

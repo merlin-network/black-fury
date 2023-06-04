@@ -3,7 +3,7 @@ package types_test
 import (
 	"testing"
 
-	"github.com/Black-Network/Black/v6/x/csr/types"
+	"github.com/merlin-network/black/v6/x/csr/types"
 	"github.com/stretchr/testify/suite"
 )
 

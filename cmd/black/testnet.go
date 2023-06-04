@@ -43,9 +43,9 @@ import (
 	ethermint "github.com/evmos/ethermint/types"
 	evmtypes "github.com/evmos/ethermint/x/evm/types"
 
-	cmdcfg "github.com/Black-Network/Black/v6/cmd/config"
-	blackkr "github.com/Black-Network/Black/v6/crypto/keyring"
-	"github.com/Black-Network/Black/v6/testutil/network"
+	cmdcfg "github.com/merlin-network/black/v6/cmd/config"
+	blackkr "github.com/merlin-network/black/v6/crypto/keyring"
+	"github.com/merlin-network/black/v6/testutil/network"
 )
 
 var (

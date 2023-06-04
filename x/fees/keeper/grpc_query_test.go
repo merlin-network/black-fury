@@ -6,7 +6,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/query"
 
-	"github.com/Black-Network/Black/v6/x/fees/types"
+	"github.com/merlin-network/black/v6/x/fees/types"
 	"github.com/evmos/ethermint/tests"
 )
 

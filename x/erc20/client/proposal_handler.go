@@ -3,8 +3,8 @@ package client
 import (
 	govclient "github.com/cosmos/cosmos-sdk/x/gov/client"
 
-	"github.com/Black-Network/Black/v6/x/erc20/client/cli"
-	"github.com/Black-Network/Black/v6/x/erc20/client/rest"
+	"github.com/merlin-network/black/v6/x/erc20/client/cli"
+	"github.com/merlin-network/black/v6/x/erc20/client/rest"
 )
 
 var (

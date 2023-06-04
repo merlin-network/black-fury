@@ -1,8 +1,8 @@
 package inflation
 
 import (
-	"github.com/Black-Network/Black/v6/x/inflation/keeper"
-	"github.com/Black-Network/Black/v6/x/inflation/types"
+	"github.com/merlin-network/black/v6/x/inflation/keeper"
+	"github.com/merlin-network/black/v6/x/inflation/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )
 

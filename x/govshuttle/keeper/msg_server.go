@@ -1,7 +1,7 @@
 package keeper
 
 import (
-	"github.com/Black-Network/Black/v6/x/govshuttle/types"
+	"github.com/merlin-network/black/v6/x/govshuttle/types"
 )
 
 type msgServer struct {

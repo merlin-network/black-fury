@@ -19,7 +19,7 @@ import (
 
 	ibcgotesting "github.com/cosmos/ibc-go/v3/testing"
 
-	blackapp "github.com/Black-Network/Black/v6/app"
+	blackapp "github.com/merlin-network/black/v6/app"
 	ethermint "github.com/evmos/ethermint/types"
 )
 

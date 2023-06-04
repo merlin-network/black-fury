@@ -23,10 +23,10 @@ import (
 	ethermint "github.com/evmos/ethermint/types"
 	evmtypes "github.com/evmos/ethermint/x/evm/types"
 
-	blackkr "github.com/Black-Network/Black/v6/crypto/keyring"
+	blackkr "github.com/merlin-network/black/v6/crypto/keyring"
 
-	vestingcli "github.com/Black-Network/Black/v6/x/vesting/client/cli"
-	vestingtypes "github.com/Black-Network/Black/v6/x/vesting/types"
+	vestingcli "github.com/merlin-network/black/v6/x/vesting/client/cli"
+	vestingtypes "github.com/merlin-network/black/v6/x/vesting/types"
 )
 
 const (

@@ -38,9 +38,9 @@ import (
 	servercfg "github.com/evmos/ethermint/server/config"
 	srvflags "github.com/evmos/ethermint/server/flags"
 
-	"github.com/Black-Network/Black/v6/app"
-	cmdcfg "github.com/Black-Network/Black/v6/cmd/config"
-	blackkr "github.com/Black-Network/Black/v6/crypto/keyring"
+	"github.com/merlin-network/black/v6/app"
+	cmdcfg "github.com/merlin-network/black/v6/cmd/config"
+	blackkr "github.com/merlin-network/black/v6/crypto/keyring"
 )
 
 const (

@@ -4,7 +4,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/Black-Network/Black/v6/x/fees/types"
+	"github.com/merlin-network/black/v6/x/fees/types"
 )
 
 // NewHandler defines the fees module handler instance

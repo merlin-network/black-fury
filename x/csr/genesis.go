@@ -1,8 +1,8 @@
 package csr
 
 import (
-	"github.com/Black-Network/Black/v6/x/csr/keeper"
-	"github.com/Black-Network/Black/v6/x/csr/types"
+	"github.com/merlin-network/black/v6/x/csr/keeper"
+	"github.com/merlin-network/black/v6/x/csr/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	authkeeper "github.com/cosmos/cosmos-sdk/x/auth/keeper"
 )

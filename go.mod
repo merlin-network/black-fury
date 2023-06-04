@@ -1,4 +1,4 @@
-module github.com/Black-Network/Black/v6
+module github.com/merlin-network/black/v6
 
 go 1.18
 

@@ -14,7 +14,7 @@ import (
 	"github.com/evmos/ethermint/server/config"
 	"github.com/evmos/ethermint/testutil/network"
 
-	blacknetwork "github.com/Black-Network/Black/v6/testutil/network"
+	blacknetwork "github.com/merlin-network/black/v6/testutil/network"
 )
 
 type IntegrationTestSuite struct {

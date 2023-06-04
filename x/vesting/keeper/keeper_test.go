@@ -35,10 +35,10 @@ import (
 	ethermint "github.com/evmos/ethermint/types"
 	evm "github.com/evmos/ethermint/x/evm/types"
 
-	"github.com/Black-Network/Black/v6/app"
-	"github.com/Black-Network/Black/v6/contracts"
-	epochstypes "github.com/Black-Network/Black/v6/x/epochs/types"
-	"github.com/Black-Network/Black/v6/x/vesting/types"
+	"github.com/merlin-network/black/v6/app"
+	"github.com/merlin-network/black/v6/contracts"
+	epochstypes "github.com/merlin-network/black/v6/x/epochs/types"
+	"github.com/merlin-network/black/v6/x/vesting/types"
 )
 
 var (

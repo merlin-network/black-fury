@@ -3,7 +3,7 @@ package keeper_test
 import (
 	"fmt"
 
-	"github.com/Black-Network/Black/v6/testutil"
+	"github.com/merlin-network/black/v6/testutil"
 	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
@@ -17,9 +17,9 @@ import (
 	ibcgotesting "github.com/cosmos/ibc-go/v3/testing"
 	ibcmock "github.com/cosmos/ibc-go/v3/testing/mock"
 
-	"github.com/Black-Network/Black/v6/x/recovery/keeper"
-	"github.com/Black-Network/Black/v6/x/recovery/types"
-	vestingtypes "github.com/Black-Network/Black/v6/x/vesting/types"
+	"github.com/merlin-network/black/v6/x/recovery/keeper"
+	"github.com/merlin-network/black/v6/x/recovery/types"
+	vestingtypes "github.com/merlin-network/black/v6/x/vesting/types"
 	distrtypes "github.com/cosmos/cosmos-sdk/x/distribution/types"
 )
 

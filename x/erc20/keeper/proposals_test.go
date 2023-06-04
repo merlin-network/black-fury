@@ -12,9 +12,9 @@ import (
 	"github.com/evmos/ethermint/tests"
 	evmtypes "github.com/evmos/ethermint/x/evm/types"
 
-	"github.com/Black-Network/Black/v6/x/erc20/keeper"
-	"github.com/Black-Network/Black/v6/x/erc20/types"
-	inflationtypes "github.com/Black-Network/Black/v6/x/inflation/types"
+	"github.com/merlin-network/black/v6/x/erc20/keeper"
+	"github.com/merlin-network/black/v6/x/erc20/types"
+	inflationtypes "github.com/merlin-network/black/v6/x/inflation/types"
 )
 
 const (

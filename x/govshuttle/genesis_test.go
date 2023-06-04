@@ -2,10 +2,10 @@ package govshuttle_test
 
 import (
 	"testing"
-	//keepertest "github.com/Black-Network/Black/v2/testutil/keeper"
-	//"github.com/Black-Network/Black/v2/testutil/nullify"
-	// "github.com/Black-Network/Black/v2/x/govshuttle"
-	// "github.com/Black-Network/Black/v2/x/govshuttle/types"
+	//keepertest "github.com/merlin-network/black/v2/testutil/keeper"
+	//"github.com/merlin-network/black/v2/testutil/nullify"
+	// "github.com/merlin-network/black/v2/x/govshuttle"
+	// "github.com/merlin-network/black/v2/x/govshuttle/types"
 	// "github.com/stretchr/testify/require"
 )
 

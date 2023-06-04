@@ -3,8 +3,8 @@ package recovery
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/Black-Network/Black/v6/x/recovery/keeper"
-	"github.com/Black-Network/Black/v6/x/recovery/types"
+	"github.com/merlin-network/black/v6/x/recovery/keeper"
+	"github.com/merlin-network/black/v6/x/recovery/types"
 )
 
 // InitGenesis import module genesis

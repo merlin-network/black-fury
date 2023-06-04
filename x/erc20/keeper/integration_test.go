@@ -14,9 +14,9 @@ import (
 	"github.com/evmos/ethermint/encoding"
 	ethermint "github.com/evmos/ethermint/types"
 
-	"github.com/Black-Network/Black/v6/app"
-	"github.com/Black-Network/Black/v6/testutil"
-	"github.com/Black-Network/Black/v6/x/erc20/types"
+	"github.com/merlin-network/black/v6/app"
+	"github.com/merlin-network/black/v6/testutil"
+	"github.com/merlin-network/black/v6/x/erc20/types"
 
 	authsigning "github.com/cosmos/cosmos-sdk/x/auth/signing"
 	abci "github.com/tendermint/tendermint/abci/types"

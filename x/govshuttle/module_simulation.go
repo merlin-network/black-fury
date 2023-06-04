@@ -3,9 +3,9 @@ package govshuttle
 import (
 	"math/rand"
 
-	//"github.com/Black-Network/Black/v2/testutil/sample"
-	govshuttlesimulation "github.com/Black-Network/Black/v6/x/govshuttle/simulation"
-	"github.com/Black-Network/Black/v6/x/govshuttle/types"
+	//"github.com/merlin-network/black/v2/testutil/sample"
+	govshuttlesimulation "github.com/merlin-network/black/v6/x/govshuttle/simulation"
+	"github.com/merlin-network/black/v6/x/govshuttle/types"
 	"github.com/cosmos/cosmos-sdk/baseapp"
 	simappparams "github.com/cosmos/cosmos-sdk/simapp/params"
 	sdk "github.com/cosmos/cosmos-sdk/types"

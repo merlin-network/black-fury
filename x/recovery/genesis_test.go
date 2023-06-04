@@ -15,9 +15,9 @@ import (
 	"github.com/evmos/ethermint/tests"
 	feemarkettypes "github.com/evmos/ethermint/x/feemarket/types"
 
-	"github.com/Black-Network/Black/v6/app"
-	"github.com/Black-Network/Black/v6/x/recovery"
-	"github.com/Black-Network/Black/v6/x/recovery/types"
+	"github.com/merlin-network/black/v6/app"
+	"github.com/merlin-network/black/v6/x/recovery"
+	"github.com/merlin-network/black/v6/x/recovery/types"
 )
 
 type GenesisTestSuite struct {

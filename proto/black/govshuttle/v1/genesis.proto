@@ -5,7 +5,7 @@ import "gogoproto/gogo.proto";
 import "black/govshuttle/v1/govshuttle.proto";
 // this line is used by starport scaffolding # genesis/proto/import
 
-option go_package = "github.com/Black-Network/Black/v6/x/govshuttle/types";
+option go_package = "github.com/merlin-network/black/v6/x/govshuttle/types";
 
 // GenesisState defines the govshuttle module's genesis state.
 message GenesisState {

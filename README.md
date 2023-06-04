@@ -4,8 +4,8 @@
 
 *(black_7700-1)*
 
-> Genesis file [Published](https://github.com/Black-Network/Black/raw/main/Mainnet/genesis.json)
-> Peers list [Published](https://github.com/Black-Network/Black/blob/main/Mainnet/peers.txt)
+> Genesis file [Published](https://github.com/merlin-network/black/raw/main/Mainnet/genesis.json)
+> Peers list [Published](https://github.com/merlin-network/black/blob/main/Mainnet/peers.txt)
 
 ## Hardware Requirements
 
@@ -50,7 +50,7 @@ Or install individually:
 ### Clone git repository
 
 ```bash
-git clone https://github.com/Black-Network/Black.git
+git clone https://github.com/merlin-network/black.git
 cd Black/cmd/black
 go install -tags ledger ./...
 sudo mv $HOME/go/bin/black /usr/bin/
@@ -94,11 +94,11 @@ If this runs successfully, it should dump a blob of JSON to the terminal.
 
 Download the Genesis file: 
 
-`wget https://raw.githubusercontent.com/Black-Network/Black/genesis/Networks/Mainnet/genesis.json -P $HOME/.black/config/` 
+`wget https://raw.githubusercontent.com/merlin-network/black/genesis/Networks/Mainnet/genesis.json -P $HOME/.black/config/` 
 
 > _**Note:** If you later get `Error: couldn't read GenesisDoc file: open /root/.black/config/genesis.json: no such file or directory` put the genesis.json file wherever it wants instead, such as:
 > 
-> `sudo wget https://github.com/Black-Network/Black/raw/main/Mainnet/genesis.json -P/root/.black/config/`
+> `sudo wget https://github.com/merlin-network/black/raw/main/Mainnet/genesis.json -P/root/.black/config/`
 
 Edit the minimum-gas-prices in `${HOME}/.black/config/app.toml`:
 

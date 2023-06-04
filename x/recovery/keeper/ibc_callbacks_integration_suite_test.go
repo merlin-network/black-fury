@@ -15,11 +15,11 @@ import (
 	channeltypes "github.com/cosmos/ibc-go/v3/modules/core/04-channel/types"
 	ibcgotesting "github.com/cosmos/ibc-go/v3/testing"
 
-	ibctesting "github.com/Black-Network/Black/v6/ibc/testing"
+	ibctesting "github.com/merlin-network/black/v6/ibc/testing"
 
-	"github.com/Black-Network/Black/v6/app"
-	inflationtypes "github.com/Black-Network/Black/v6/x/inflation/types"
-	"github.com/Black-Network/Black/v6/x/recovery/types"
+	"github.com/merlin-network/black/v6/app"
+	inflationtypes "github.com/merlin-network/black/v6/x/inflation/types"
+	"github.com/merlin-network/black/v6/x/recovery/types"
 	minttypes "github.com/cosmos/cosmos-sdk/x/mint/types"
 )
 

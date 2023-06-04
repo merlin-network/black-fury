@@ -7,8 +7,8 @@ import (
 	svrcmd "github.com/cosmos/cosmos-sdk/server/cmd"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/Black-Network/Black/v6/app"
-	cmdcfg "github.com/Black-Network/Black/v6/cmd/config"
+	"github.com/merlin-network/black/v6/app"
+	cmdcfg "github.com/merlin-network/black/v6/cmd/config"
 )
 
 func main() {

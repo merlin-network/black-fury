@@ -5,7 +5,7 @@ func EnableObservability() error {
 	// if true {
 	// Temporarily disabling this until we can configure out port reuse
 	// fast enough or enabling observability through the config.
-	// Please see https://github.com/Black-Network/Black/v2/issues/84
+	// Please see https://github.com/merlin-network/black/v2/issues/84
 	// return nil
 	// }
 

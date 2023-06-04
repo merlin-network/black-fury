@@ -1,7 +1,7 @@
 package testutil
 
 import (
-	inflationtypes "github.com/Black-Network/Black/v6/x/inflation/types"
+	inflationtypes "github.com/merlin-network/black/v6/x/inflation/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	bankkeeper "github.com/cosmos/cosmos-sdk/x/bank/keeper"
 )

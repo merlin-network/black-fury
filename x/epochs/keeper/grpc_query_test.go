@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/Black-Network/Black/v6/x/epochs/types"
+	"github.com/merlin-network/black/v6/x/epochs/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/query"
 )

@@ -4,8 +4,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	authkeeper "github.com/cosmos/cosmos-sdk/x/auth/keeper"
 
-	"github.com/Black-Network/Black/v6/x/erc20/keeper"
-	"github.com/Black-Network/Black/v6/x/erc20/types"
+	"github.com/merlin-network/black/v6/x/erc20/keeper"
+	"github.com/merlin-network/black/v6/x/erc20/types"
 )
 
 // InitGenesis import module genesis

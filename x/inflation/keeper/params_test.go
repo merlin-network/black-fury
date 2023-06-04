@@ -1,7 +1,7 @@
 package keeper_test
 
 import (
-	"github.com/Black-Network/Black/v6/x/inflation/types"
+	"github.com/merlin-network/black/v6/x/inflation/types"
 )
 
 func (suite *KeeperTestSuite) TestParams() {

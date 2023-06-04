@@ -13,7 +13,7 @@ import (
 	"github.com/tendermint/tendermint/libs/log"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/Black-Network/Black/v6/types"
+	"github.com/merlin-network/black/v6/types"
 	"github.com/evmos/ethermint/encoding"
 )
 

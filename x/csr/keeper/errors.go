@@ -3,7 +3,7 @@ package keeper
 // DONTCOVER
 
 import (
-	"github.com/Black-Network/Black/v6/x/csr/types"
+	"github.com/merlin-network/black/v6/x/csr/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 )
 

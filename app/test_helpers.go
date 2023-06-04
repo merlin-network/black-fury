@@ -16,8 +16,8 @@ import (
 	"github.com/evmos/ethermint/encoding"
 	feemarkettypes "github.com/evmos/ethermint/x/feemarket/types"
 
-	"github.com/Black-Network/Black/v6/cmd/config"
-	"github.com/Black-Network/Black/v6/types"
+	"github.com/merlin-network/black/v6/cmd/config"
+	"github.com/merlin-network/black/v6/types"
 )
 
 func init() {

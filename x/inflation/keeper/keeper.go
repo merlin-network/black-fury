@@ -7,7 +7,7 @@ import (
 
 	"github.com/tendermint/tendermint/libs/log"
 
-	"github.com/Black-Network/Black/v6/x/inflation/types"
+	"github.com/merlin-network/black/v6/x/inflation/types"
 )
 
 // Keeper of the inflation store

@@ -3,7 +3,7 @@ package keeper_test
 import (
 	"fmt"
 
-	"github.com/Black-Network/Black/v6/x/inflation/types"
+	"github.com/merlin-network/black/v6/x/inflation/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 	ethermint "github.com/evmos/ethermint/types"
