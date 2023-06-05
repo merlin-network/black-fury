@@ -24,7 +24,7 @@ import (
 )
 
 // ChainIDPrefix defines the default chain ID prefix for black test chains
-var ChainIDPrefix = "black_9000-"
+var ChainIDPrefix = "highbury_9000-"
 
 func init() {
 	ibcgotesting.ChainIDPrefix = ChainIDPrefix

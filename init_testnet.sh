@@ -1,6 +1,6 @@
 KEY="mykey"
 KEY2="mykey2"
-CHAINID="black_7701-1"
+CHAINID="highbury_7701-1"
 MONIKER="plex-validator"
 KEYRING="test"
 KEYALGO="eth_secp256k1"

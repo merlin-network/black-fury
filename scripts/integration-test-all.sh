@@ -17,7 +17,7 @@ RPC_PORT="854"
 IP_ADDR="0.0.0.0"
 
 KEY="mykey"
-CHAINID="black_9000-1"
+CHAINID="highbury_9000-1"
 MONIKER="mymoniker"
 
 ## default port prefixes for black
@@ -110,10 +110,10 @@ start_func() {
     --keyring-backend test --home "$DATA_DIR$i" \
     >"$DATA_DIR"/node"$i".log 2>&1 & disown
 
-    black_PID=$!
-    echo "started black node, pid=$black_PID"
+    highbury_PID=$!
+    echo "started black node, pid=$highbury_PID"
     # add PID to array
-    arr+=("$black_PID")
+    arr+=("$highbury_PID")
 
     if [[ $MODE == "pending" ]]; then
       echo "waiting for the first block..."
@@ -156,12 +156,12 @@ if [[ -z $TEST || $TEST == "rpc" ||  $TEST == "pending" ]]; then
 fi
 
 stop_func() {
-    black_PID=$i
-    echo "shutting down node, pid=$black_PID ..."
+    highbury_PID=$i
+    echo "shutting down node, pid=$highbury_PID ..."
 
     # Shutdown black node
-    kill -9 "$black_PID"
-    wait "$black_PID"
+    kill -9 "$highbury_PID"
+    wait "$highbury_PID"
 
     if [ $REMOVE_DATA_DIR == "true" ]
     then

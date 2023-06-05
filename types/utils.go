@@ -14,9 +14,9 @@ import (
 
 const (
 	// MainnetChainID defines the black EIP155 chain ID for mainnet
-	MainnetChainID = "black_9001"
+	MainnetChainID = "highbury_9001"
 	// TestnetChainID defines the black EIP155 chain ID for testnet
-	TestnetChainID = "black_9000"
+	TestnetChainID = "highbury_9000"
 )
 
 // IsMainnet returns true if the chain-id has the black mainnet EIP155 chain prefix.
