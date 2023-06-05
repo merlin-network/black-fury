@@ -167,7 +167,7 @@
     "crisis": {
       "constant_fee": {
         "denom": "ablack",
-        "amount": "1000"
+        "amount": "100000"
       }
     },
     "csr": {
