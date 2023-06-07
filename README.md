@@ -98,7 +98,7 @@ Download the Genesis file:
 
 > _**Note:** If you later get `Error: couldn't read GenesisDoc file: open /root/.black/config/genesis.json: no such file or directory` put the genesis.json file wherever it wants instead, such as:
 > 
-> `sudo wget https://github.com/merlin-network/black/raw/main/Mainnet/genesis.json -P/root/.black/config/`
+> `sudo wget [https://raw.githubusercontent.com/merlin-network/black-fury/black/Testnet/genesis.json] -P/root/.black/config/`
 
 Edit the minimum-gas-prices in `${HOME}/.black/config/app.toml`:
 
