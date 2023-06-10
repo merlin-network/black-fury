@@ -7,7 +7,7 @@ ARG KEY_NAME <add your keyname>
 ARG MONIKER <add your moniker>
 
 # add the network id
-ARG NETWORK_ID black_9624-1
+ARG NETWORK_ID highbury_9624-1
 
 # arbitrary validator metadata
 ARG DETAILS <details as string>
@@ -35,7 +35,7 @@ RUN black keys add $KEY_NAME
     # black keys add $KEY_NAME --ledger 
 
 # initialize node
-RUN black init $MONIKER --chain-id black_9624-1
+RUN black init $MONIKER --chain-id highbury_9624-1
 
 # get genesis file
 RUN wget https://github.com/merlin-network/black-Testnet-v2/raw/main/genesis.json -P $HOME/.black/config/
