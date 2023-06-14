@@ -9,7 +9,7 @@ import (
 	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
 )
 
-var DefaultInflationDenom = "ablack"
+var DefaultInflationDenom = "afury"
 
 // Parameter store keys
 var (
@@ -41,7 +41,7 @@ func NewParams(
 // default minting module parameter
 func DefaultParams() Params {
 	return Params{
-		MintDenom: "ablack",
+		MintDenom: "afury",
 		ExponentialCalculation: ExponentialCalculation{
 			A:             sdk.NewDec(int64(16_304_348)),
 			R:             sdk.NewDecWithPrec(35, 2), // 35%

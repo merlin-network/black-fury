@@ -106,7 +106,7 @@
           "address": "black1xz5vduyrqz34v8j8mllaq880x2jtc3u95gpwy8",
           "coins": [
             {
-              "denom": "ablack",
+              "denom": "afury",
               "amount": "20000000000000000000000"
             }
           ]
@@ -115,7 +115,7 @@
           "address": "black13dg42q4zyvtjsm3hr69l5aq8adx7098g66uqcg",
           "coins": [
             {
-              "denom": "ablack",
+              "denom": "afury",
               "amount": "20000000000000000000000"
             }
           ]
@@ -124,7 +124,7 @@
           "address": "black1lqvm94ha3fkw6n4ur43w899dq9le55mfp04pdj",
           "coins": [
             {
-              "denom": "ablack",
+              "denom": "afury",
               "amount": "20000000000000000000000"
             }
           ]
@@ -133,7 +133,7 @@
           "address": "black18j2zpxk5qjmmh36xfsf0g2zhew520k3sf42dvt",
           "coins": [
             {
-              "denom": "ablack",
+              "denom": "afury",
               "amount": "20000000000000000000000"
             }
           ]
@@ -142,7 +142,7 @@
           "address": "black178dudud246xyrwsuaza08pl3lrkyz7dncekgtw",
           "coins": [
             {
-              "denom": "ablack",
+              "denom": "afury",
               "amount": "20000000000000000000000"
             }
           ]
@@ -151,7 +151,7 @@
           "address": "black1uvty67ctqsv9tuwkplq97tqgz4tjnpsn9zhdzx",
           "coins": [
             {
-              "denom": "ablack",
+              "denom": "afury",
               "amount": "20000000000000000000000"
             }
           ]
@@ -166,7 +166,7 @@
     },
     "crisis": {
       "constant_fee": {
-        "denom": "ablack",
+        "denom": "afury",
         "amount": "100000"
       }
     },
@@ -306,7 +306,7 @@
                   "key": "0B1p8E324neWeF8/oBHVoFfqmaUpwVUqNmo5/HNjKUg="
                 },
                 "value": {
-                  "denom": "ablack",
+                  "denom": "afury",
                   "amount": "200000000000000000000"
                 }
               }
@@ -367,7 +367,7 @@
                   "key": "K0UlhpL1+UW7hJe2kKj/50T2ngVBD5/74gJXfFwaDm8="
                 },
                 "value": {
-                  "denom": "ablack",
+                  "denom": "afury",
                   "amount": "200000000000000000000"
                 }
               }
@@ -428,7 +428,7 @@
                   "key": "qlbrTU1Nnj82uB6+kF7kp0Oh08A3iVJrX28uElnlLbk="
                 },
                 "value": {
-                  "denom": "ablack",
+                  "denom": "afury",
                   "amount": "200000000000000000000"
                 }
               }
@@ -489,7 +489,7 @@
                   "key": "iPr/Akx3eTfa9g0y1dt+OkGvCjJbQF7TkNpchkm+fIQ="
                 },
                 "value": {
-                  "denom": "ablack",
+                  "denom": "afury",
                   "amount": "200000000000000000000"
                 }
               }
@@ -550,7 +550,7 @@
                   "key": "Xpdq4Fdup7YK6HIdK/K7oNOizRZ0KnQfBxIfFWJ222E="
                 },
                 "value": {
-                  "denom": "ablack",
+                  "denom": "afury",
                   "amount": "200000000000000000000"
                 }
               }
@@ -611,7 +611,7 @@
                   "key": "p4CxqHb32pIXeon0E1LMbglqjHhTYNXGniSxMwgvCBQ="
                 },
                 "value": {
-                  "denom": "ablack",
+                  "denom": "afury",
                   "amount": "200000000000000000000"
                 }
               }
@@ -657,7 +657,7 @@
       "deposit_params": {
         "min_deposit": [
           {
-            "denom": "ablack",
+            "denom": "afury",
             "amount": "10000000"
           }
         ],
@@ -710,7 +710,7 @@
     },
     "inflation": {
       "params": {
-        "mint_denom": "ablack",
+        "mint_denom": "afury",
         "exponential_calculation": {
           "a": "16304348.000000000000000000",
           "r": "0.350000000000000000",
@@ -753,7 +753,7 @@
         "max_validators": 100,
         "max_entries": 7,
         "historical_entries": 10000,
-        "bond_denom": "ablack"
+        "bond_denom": "afury"
       },
       "last_total_power": "0",
       "last_validator_powers": [],

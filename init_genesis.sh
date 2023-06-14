@@ -27,12 +27,12 @@ black keys add $KEY2 --keyring-backend $KEYRING --algo $KEYALGO
 # Set moniker and chain-id for Black (Moniker can be anything, chain-id must be an integer)
 black init $MONIKER --chain-id $CHAINID
 
-# Change parameter token denominations to ablack
-cat $HOME/.black/config/genesis.json | jq '.app_state["staking"]["params"]["bond_denom"]="ablack"' > $HOME/.black/config/tmp_genesis.json && mv $HOME/.black/config/tmp_genesis.json $HOME/.black/config/genesis.json
-cat $HOME/.black/config/genesis.json | jq '.app_state["crisis"]["constant_fee"]["denom"]="ablack"' > $HOME/.black/config/tmp_genesis.json && mv $HOME/.black/config/tmp_genesis.json $HOME/.black/config/genesis.json
-cat $HOME/.black/config/genesis.json | jq '.app_state["gov"]["deposit_params"]["min_deposit"][0]["denom"]="ablack"' > $HOME/.black/config/tmp_genesis.json && mv $HOME/.black/config/tmp_genesis.json $HOME/.black/config/genesis.json
-cat $HOME/.black/config/genesis.json | jq '.app_state["evm"]["params"]["evm_denom"]="ablack"' > $HOME/.black/config/tmp_genesis.json && mv $HOME/.black/config/tmp_genesis.json $HOME/.black/config/genesis.json
-cat $HOME/.black/config/genesis.json | jq '.app_state["inflation"]["params"]["mint_denom"]="ablack"' > $HOME/.black/config/tmp_genesis.json && mv $HOME/.black/config/tmp_genesis.json $HOME/.black/config/genesis.json
+# Change parameter token denominations to afury
+cat $HOME/.black/config/genesis.json | jq '.app_state["staking"]["params"]["bond_denom"]="afury"' > $HOME/.black/config/tmp_genesis.json && mv $HOME/.black/config/tmp_genesis.json $HOME/.black/config/genesis.json
+cat $HOME/.black/config/genesis.json | jq '.app_state["crisis"]["constant_fee"]["denom"]="afury"' > $HOME/.black/config/tmp_genesis.json && mv $HOME/.black/config/tmp_genesis.json $HOME/.black/config/genesis.json
+cat $HOME/.black/config/genesis.json | jq '.app_state["gov"]["deposit_params"]["min_deposit"][0]["denom"]="afury"' > $HOME/.black/config/tmp_genesis.json && mv $HOME/.black/config/tmp_genesis.json $HOME/.black/config/genesis.json
+cat $HOME/.black/config/genesis.json | jq '.app_state["evm"]["params"]["evm_denom"]="afury"' > $HOME/.black/config/tmp_genesis.json && mv $HOME/.black/config/tmp_genesis.json $HOME/.black/config/genesis.json
+cat $HOME/.black/config/genesis.json | jq '.app_state["inflation"]["params"]["mint_denom"]="afury"' > $HOME/.black/config/tmp_genesis.json && mv $HOME/.black/config/tmp_genesis.json $HOME/.black/config/genesis.json
 
 # Change voting params so that submitted proposals pass immediately for testing
 cat $HOME/.black/config/genesis.json| jq '.app_state.gov.voting_params.voting_period="7200s"' > $HOME/.black/config/tmp_genesis.json && mv $HOME/.black/config/tmp_genesis.json $HOME/.black/config/genesis.json
@@ -70,8 +70,8 @@ if [[ $1 == "pending" ]]; then
 fi
 
 # Allocate genesis accounts (cosmos formatted addresses)
-black add-genesis-account $KEY 370446789000000000000ablack --keyring-backend $KEYRING
-black add-genesis-account $KEY2 64808383230000000000000000ablack --keyring-backend $KEYRING
+black add-genesis-account $KEY 370446789000000000000afury --keyring-backend $KEYRING
+black add-genesis-account $KEY2 64808383230000000000000000afury --keyring-backend $KEYRING
 
 # Contributors
 black add-genesis-account black1jl2zcz32npjgs88vd60xv5qan5rtzh4xena7na 10000000000000afury  				
@@ -269,8 +269,8 @@ black add-genesis-account black1w4v0tjfpfqrncl3mh8ezmceyjfjnnukzrd3tgt 110224383
 echo $KEYRING
 echo $KEY
 # Sign genesis transaction
-black gentx $KEY2 100000000000000000000000ablack --keyring-backend $KEYRING --chain-id $CHAINID
-#black gentx $KEY2 1000000000000000000000ablack --keyring-backend $KEYRING --chain-id $CHAINID
+black gentx $KEY2 100000000000000000000000afury --keyring-backend $KEYRING --chain-id $CHAINID
+#black gentx $KEY2 1000000000000000000000afury --keyring-backend $KEYRING --chain-id $CHAINID
 
 # Collect genesis tx
 black collect-gentxs
@@ -283,5 +283,5 @@ if [[ $1 == "pending" ]]; then
 fi
 
 # Start the node (remove the --pruning=nothing flag if historical queries are not needed)
-# black start --pruning=nothing --trace --log_level info --minimum-gas-prices=0.0001ablack --json-rpc.api eth,txpool,personal,net,debug,web3 --rpc.laddr "tcp://0.0.0.0:26657" --api.enable true
+# black start --pruning=nothing --trace --log_level info --minimum-gas-prices=0.0001afury --json-rpc.api eth,txpool,personal,net,debug,web3 --rpc.laddr "tcp://0.0.0.0:26657" --api.enable true
 

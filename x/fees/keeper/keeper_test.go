@@ -76,7 +76,7 @@ func (suite *KeeperTestSuite) SetupApp() {
 	suite.address = common.BytesToAddress(priv.PubKey().Address().Bytes())
 	suite.signer = tests.NewSigner(priv)
 
-	suite.denom = "ablack"
+	suite.denom = "afury"
 
 	// consensus key
 	privCons, err := ethsecp256k1.GenerateKey()
