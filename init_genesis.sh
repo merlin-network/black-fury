@@ -1,8 +1,8 @@
 KEY="mykey"
 KEY2="plexkey"
 CHAINID="highbury_710-1"
-MONIKER="plex-validator"
-KEYRING="os"
+MONIKER="blackfury-validator"
+KEYRING="test"
 KEYALGO="eth_secp256k1"
 LOGLEVEL="info"
 # to trace evm
