@@ -1,7 +1,7 @@
 #!/bin/bash
 
 KEY="mykey"
-CHAINID="highbury_9000-1"
+CHAINID="highbury_710-1"
 MONIKER="mymoniker"
 DATA_DIR=$(mktemp -d -t black-datadir.XXXXX)
 

@@ -1,5 +1,5 @@
 KEY="mykey"
-CHAINID="highbury_9000-1"
+CHAINID="highbury_710-1"
 MONIKER="localtestnet"
 KEYRING="test"
 KEYALGO="eth_secp256k1"
