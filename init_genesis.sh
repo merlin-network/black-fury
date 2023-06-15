@@ -267,10 +267,10 @@ black add-genesis-account black1w4v0tjfpfqrncl3mh8ezmceyjfjnnukzrd3tgt 110224383
 # cat $HOME/.black/config/genesis.json | jq -r --arg total_supply "$total_supply" '.app_state["bank"]["supply"][0]["amount"]=$total_supply' > $HOME/.black/config/tmp_genesis.json && mv $HOME/.black/config/tmp_genesis.json $HOME/.black/config/genesis.json
 
 
-# echo $KEYRING
-# echo $KEY
+echo $KEYRING
+echo $KEY
 # Sign genesis transaction
-# black gentx $KEY2 100000000000000000000000afury --keyring-backend $KEYRING --chain-id $CHAINID --ip 34.93.171.55
+black gentx $KEY2 100000000000000000000000afury --keyring-backend $KEYRING --chain-id $CHAINID --ip 34.124.240.49
 #black gentx $KEY2 1000000000000000000000afury --keyring-backend $KEYRING --chain-id $CHAINID
 
 # Collect genesis tx
