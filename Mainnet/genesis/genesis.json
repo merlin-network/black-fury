@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2023-06-14T19:22:07.28779646Z",
+  "genesis_time": "2023-06-15T06:24:01.161548805Z",
   "chain_id": "highbury_710-1",
   "initial_height": "1",
   "consensus_params": {
@@ -34,7 +34,7 @@
         {
           "@type": "/ethermint.types.v1.EthAccount",
           "base_account": {
-            "address": "black10u2dtmuyeme84utzymezlzgdvduhvdzjycgyag",
+            "address": "black1ryp2dnpd5ryved06an4fje3rn4zd0kw7c7scp8",
             "pub_key": null,
             "account_number": "0",
             "sequence": "0"
@@ -44,57 +44,7 @@
         {
           "@type": "/ethermint.types.v1.EthAccount",
           "base_account": {
-            "address": "black1hrprkt44d8tcy6nhakxhqs6ehy82gxvz7yx4hr",
-            "pub_key": null,
-            "account_number": "0",
-            "sequence": "0"
-          },
-          "code_hash": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
-        },
-        {
-          "@type": "/ethermint.types.v1.EthAccount",
-          "base_account": {
-            "address": "black1xcqd79fnyl5mrund0k84n6sa2hu0qy662tu9cs",
-            "pub_key": null,
-            "account_number": "0",
-            "sequence": "0"
-          },
-          "code_hash": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
-        },
-        {
-          "@type": "/ethermint.types.v1.EthAccount",
-          "base_account": {
-            "address": "black14zdv4j5shs2nwczeh0w32f4wtxdkegwkmnf625",
-            "pub_key": null,
-            "account_number": "0",
-            "sequence": "0"
-          },
-          "code_hash": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
-        },
-        {
-          "@type": "/ethermint.types.v1.EthAccount",
-          "base_account": {
-            "address": "black1ry2eewpnckyh7sqallp5udnp3sc0aj3aupag88",
-            "pub_key": null,
-            "account_number": "0",
-            "sequence": "0"
-          },
-          "code_hash": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
-        },
-        {
-          "@type": "/ethermint.types.v1.EthAccount",
-          "base_account": {
-            "address": "black1fmpevgg0uk5s5scgeq92fez0rht0daezy38nck",
-            "pub_key": null,
-            "account_number": "0",
-            "sequence": "0"
-          },
-          "code_hash": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
-        },
-        {
-          "@type": "/ethermint.types.v1.EthAccount",
-          "base_account": {
-            "address": "black1zuc27arryrxzfuaawncsqukvhe4vn6vw7c69tx",
+            "address": "black1ucuu7cuvfq9zpx49z78tsmend4jy59hz072wz8",
             "pub_key": null,
             "account_number": "0",
             "sequence": "0"
@@ -2057,6 +2007,15 @@
           ]
         },
         {
+          "address": "black1ryp2dnpd5ryved06an4fje3rn4zd0kw7c7scp8",
+          "coins": [
+            {
+              "denom": "afury",
+              "amount": "370446789000000000000"
+            }
+          ]
+        },
+        {
           "address": "black1r9764rmspkpy0qxx5myxq0kz90dukjna5lvjcl",
           "coins": [
             {
@@ -2723,15 +2682,6 @@
           ]
         },
         {
-          "address": "black10u2dtmuyeme84utzymezlzgdvduhvdzjycgyag",
-          "coins": [
-            {
-              "denom": "afury",
-              "amount": "370446789000000000000"
-            }
-          ]
-        },
-        {
           "address": "black10le9zwrp6x9t6xcg4ws2j8rsvggvktaj0zj8pv",
           "coins": [
             {
@@ -3074,60 +3024,6 @@
           ]
         },
         {
-          "address": "black1hrprkt44d8tcy6nhakxhqs6ehy82gxvz7yx4hr",
-          "coins": [
-            {
-              "denom": "afury",
-              "amount": "648083832300000000000000"
-            }
-          ]
-        },
-        {
-          "address": "black1xcqd79fnyl5mrund0k84n6sa2hu0qy662tu9cs",
-          "coins": [
-            {
-              "denom": "afury",
-              "amount": "648083832300000000000000"
-            }
-          ]
-        },
-        {
-          "address": "black1ry2eewpnckyh7sqallp5udnp3sc0aj3aupag88",
-          "coins": [
-            {
-              "denom": "afury",
-              "amount": "648083832300000000000000"
-            }
-          ]
-        },
-        {
-          "address": "black14zdv4j5shs2nwczeh0w32f4wtxdkegwkmnf625",
-          "coins": [
-            {
-              "denom": "afury",
-              "amount": "648083832300000000000000"
-            }
-          ]
-        },
-        {
-          "address": "black1fmpevgg0uk5s5scgeq92fez0rht0daezy38nck",
-          "coins": [
-            {
-              "denom": "afury",
-              "amount": "648083832300000000000000"
-            }
-          ]
-        },
-        {
-          "address": "black1zuc27arryrxzfuaawncsqukvhe4vn6vw7c69tx",
-          "coins": [
-            {
-              "denom": "afury",
-              "amount": "648083832300000000000000"
-            }
-          ]
-        },
-        {
           "address": "black1htxf0fcfmyxyw8stjw38jz2s3muh3q6yslepur",
           "coins": [
             {
@@ -3389,6 +3285,15 @@
           ]
         },
         {
+          "address": "black1ucuu7cuvfq9zpx49z78tsmend4jy59hz072wz8",
+          "coins": [
+            {
+              "denom": "afury",
+              "amount": "64808383230000000000000000"
+            }
+          ]
+        },
+        {
           "address": "black1u7wn3x6zphmuh0yuld7jly72725d4re6vkvzsk",
           "coins": [
             {
@@ -3596,7 +3501,12 @@
           ]
         }
       ],
-      "supply": [],
+      "supply": [
+        {
+          "denom": "afury",
+          "amount": "64808753676844723168057999"
+        }
+      ],
       "denom_metadata": []
     },
     "capability": {
@@ -3606,7 +3516,7 @@
     "crisis": {
       "constant_fee": {
         "denom": "afury",
-        "amount": "100000"
+        "amount": "1000"
       }
     },
     "csr": {
@@ -3719,69 +3629,7 @@
       "fees": []
     },
     "genutil": {
-      "gen_txs": [
-        {
-          "body": {
-            "messages": [
-              {
-                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
-                "description": {
-                  "moniker": "blackfury-validator",
-                  "identity": "",
-                  "website": "",
-                  "security_contact": "",
-                  "details": ""
-                },
-                "commission": {
-                  "rate": "0.100000000000000000",
-                  "max_rate": "0.200000000000000000",
-                  "max_change_rate": "0.010000000000000000"
-                },
-                "min_self_delegation": "1",
-                "delegator_address": "black1hrprkt44d8tcy6nhakxhqs6ehy82gxvz7yx4hr",
-                "validator_address": "blackvaloper1hrprkt44d8tcy6nhakxhqs6ehy82gxvzavwkyx",
-                "pubkey": {
-                  "@type": "/cosmos.crypto.ed25519.PubKey",
-                  "key": "Xtoz9gc2F5+uWs+QLAdeaSBnTrjMKuz1ENzAPApqQlA="
-                },
-                "value": {
-                  "denom": "afury",
-                  "amount": "100000000000000000000000"
-                }
-              }
-            ],
-            "memo": "34493b769d3223b480475f5dc6a0843a4965d0c0@10.160.0.10:26656",
-            "timeout_height": "0",
-            "extension_options": [],
-            "non_critical_extension_options": []
-          },
-          "auth_info": {
-            "signer_infos": [
-              {
-                "public_key": {
-                  "@type": "/ethermint.crypto.v1.ethsecp256k1.PubKey",
-                  "key": "AitaZFfZmmgk9ol1yeqC5x+sIM2GZYuwNV+1h9XPVlIf"
-                },
-                "mode_info": {
-                  "single": {
-                    "mode": "SIGN_MODE_DIRECT"
-                  }
-                },
-                "sequence": "0"
-              }
-            ],
-            "fee": {
-              "amount": [],
-              "gas_limit": "200000",
-              "payer": "",
-              "granter": ""
-            }
-          },
-          "signatures": [
-            "iD+oWqSC64xYT98i8PgxkUQ9YaFZ87zRjpRGppvgYJkJ/aFy3vHTTvyC0L8PZOLx2FITEYu8DlN+zgZJej7KgwA="
-          ]
-        }
-      ]
+      "gen_txs": []
     },
     "gov": {
       "starting_proposal_id": "1",
@@ -3795,10 +3643,10 @@
             "amount": "10000000"
           }
         ],
-        "max_deposit_period": "1728s"
+        "max_deposit_period": "172800s"
       },
       "voting_params": {
-        "voting_period": "720s"
+        "voting_period": "7200s"
       },
       "tally_params": {
         "quorum": "0.334000000000000000",
