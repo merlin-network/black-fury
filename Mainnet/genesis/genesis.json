@@ -3501,12 +3501,7 @@
           ]
         }
       ],
-      "supply": [
-        {
-          "denom": "afury",
-          "amount": "64808753676844723168057999"
-        }
-      ],
+      "supply": [],
       "denom_metadata": []
     },
     "capability": {
@@ -3516,12 +3511,12 @@
     "crisis": {
       "constant_fee": {
         "denom": "afury",
-        "amount": "1000"
+        "amount": "100000"
       }
     },
     "csr": {
       "params": {
-        "enable_csr": false,
+        "enable_csr": true,
         "csr_shares": "0.200000000000000000"
       }
     },
@@ -3643,10 +3638,10 @@
             "amount": "10000000"
           }
         ],
-        "max_deposit_period": "172800s"
+        "max_deposit_period": "1728s"
       },
       "voting_params": {
-        "voting_period": "7200s"
+        "voting_period": "720s"
       },
       "tally_params": {
         "quorum": "0.334000000000000000",
