@@ -44,6 +44,46 @@
         {
           "@type": "/ethermint.types.v1.EthAccount",
           "base_account": {
+            "address": "black17nxr7hy6eaczqsc37r7cd86yz5w08yhkuthphl",
+            "pub_key": null,
+            "account_number": "0",
+            "sequence": "0"
+          },
+          "code_hash": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
+        },
+        {
+          "@type": "/ethermint.types.v1.EthAccount",
+          "base_account": {
+            "address": "black1ps4yejv0lej2j07m39nk58us69e7dml5ls9h4s",
+            "pub_key": null,
+            "account_number": "0",
+            "sequence": "0"
+          },
+          "code_hash": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
+        },
+        {
+          "@type": "/ethermint.types.v1.EthAccount",
+          "base_account": {
+            "address": "black1mkfptu55l2zx3e78e2uyd3fwydggjveeeh7dx6",
+            "pub_key": null,
+            "account_number": "0",
+            "sequence": "0"
+          },
+          "code_hash": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
+        },
+        {
+          "@type": "/ethermint.types.v1.EthAccount",
+          "base_account": {
+            "address": "black165klfztsmxcu0a3tywpnllacz9355eu0ypwjzd",
+            "pub_key": null,
+            "account_number": "0",
+            "sequence": "0"
+          },
+          "code_hash": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
+        },
+        {
+          "@type": "/ethermint.types.v1.EthAccount",
+          "base_account": {
             "address": "black1ucuu7cuvfq9zpx49z78tsmend4jy59hz072wz8",
             "pub_key": null,
             "account_number": "0",
@@ -2008,6 +2048,42 @@
         },
         {
           "address": "black1ryp2dnpd5ryved06an4fje3rn4zd0kw7c7scp8",
+          "coins": [
+            {
+              "denom": "afury",
+              "amount": "370446789000000000000"
+            }
+          ]
+        },
+        {
+          "address": "black17nxr7hy6eaczqsc37r7cd86yz5w08yhkuthphl",
+          "coins": [
+            {
+              "denom": "afury",
+              "amount": "370446789000000000000"
+            }
+          ]
+        },
+        {
+          "address": "black1ps4yejv0lej2j07m39nk58us69e7dml5ls9h4s",
+          "coins": [
+            {
+              "denom": "afury",
+              "amount": "370446789000000000000"
+            }
+          ]
+        },
+        {
+          "address": "black1mkfptu55l2zx3e78e2uyd3fwydggjveeeh7dx6",
+          "coins": [
+            {
+              "denom": "afury",
+              "amount": "370446789000000000000"
+            }
+          ]
+        },
+        {
+          "address": "black165klfztsmxcu0a3tywpnllacz9355eu0ypwjzd",
           "coins": [
             {
               "denom": "afury",
