@@ -54,6 +54,56 @@
         {
           "@type": "/ethermint.types.v1.EthAccount",
           "base_account": {
+            "address": "black1xcqd79fnyl5mrund0k84n6sa2hu0qy662tu9cs",
+            "pub_key": null,
+            "account_number": "0",
+            "sequence": "0"
+          },
+          "code_hash": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
+        },
+        {
+          "@type": "/ethermint.types.v1.EthAccount",
+          "base_account": {
+            "address": "black14zdv4j5shs2nwczeh0w32f4wtxdkegwkmnf625",
+            "pub_key": null,
+            "account_number": "0",
+            "sequence": "0"
+          },
+          "code_hash": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
+        },
+        {
+          "@type": "/ethermint.types.v1.EthAccount",
+          "base_account": {
+            "address": "black1ry2eewpnckyh7sqallp5udnp3sc0aj3aupag88",
+            "pub_key": null,
+            "account_number": "0",
+            "sequence": "0"
+          },
+          "code_hash": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
+        },
+        {
+          "@type": "/ethermint.types.v1.EthAccount",
+          "base_account": {
+            "address": "black1fmpevgg0uk5s5scgeq92fez0rht0daezy38nck",
+            "pub_key": null,
+            "account_number": "0",
+            "sequence": "0"
+          },
+          "code_hash": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
+        },
+        {
+          "@type": "/ethermint.types.v1.EthAccount",
+          "base_account": {
+            "address": "black1zuc27arryrxzfuaawncsqukvhe4vn6vw7c69tx",
+            "pub_key": null,
+            "account_number": "0",
+            "sequence": "0"
+          },
+          "code_hash": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
+        },
+        {
+          "@type": "/ethermint.types.v1.EthAccount",
+          "base_account": {
             "address": "black1jl2zcz32npjgs88vd60xv5qan5rtzh4xena7na",
             "pub_key": null,
             "account_number": "0",
@@ -3028,7 +3078,52 @@
           "coins": [
             {
               "denom": "afury",
-              "amount": "64808383230000000000000000"
+              "amount": "648083832300000000000000"
+            }
+          ]
+        },
+        {
+          "address": "black1xcqd79fnyl5mrund0k84n6sa2hu0qy662tu9cs",
+          "coins": [
+            {
+              "denom": "afury",
+              "amount": "648083832300000000000000"
+            }
+          ]
+        },
+        {
+          "address": "black1ry2eewpnckyh7sqallp5udnp3sc0aj3aupag88",
+          "coins": [
+            {
+              "denom": "afury",
+              "amount": "648083832300000000000000"
+            }
+          ]
+        },
+        {
+          "address": "black14zdv4j5shs2nwczeh0w32f4wtxdkegwkmnf625",
+          "coins": [
+            {
+              "denom": "afury",
+              "amount": "648083832300000000000000"
+            }
+          ]
+        },
+        {
+          "address": "black1fmpevgg0uk5s5scgeq92fez0rht0daezy38nck",
+          "coins": [
+            {
+              "denom": "afury",
+              "amount": "648083832300000000000000"
+            }
+          ]
+        },
+        {
+          "address": "black1zuc27arryrxzfuaawncsqukvhe4vn6vw7c69tx",
+          "coins": [
+            {
+              "denom": "afury",
+              "amount": "648083832300000000000000"
             }
           ]
         },
@@ -3501,12 +3596,7 @@
           ]
         }
       ],
-      "supply": [
-        {
-          "denom": "afury",
-          "amount": "64808753676844723168057999"
-        }
-      ],
+      "supply": [],
       "denom_metadata": []
     },
     "capability": {
@@ -3516,7 +3606,7 @@
     "crisis": {
       "constant_fee": {
         "denom": "afury",
-        "amount": "1000"
+        "amount": "100000"
       }
     },
     "csr": {
@@ -3705,10 +3795,10 @@
             "amount": "10000000"
           }
         ],
-        "max_deposit_period": "172800s"
+        "max_deposit_period": "1728s"
       },
       "voting_params": {
-        "voting_period": "7200s"
+        "voting_period": "720s"
       },
       "tally_params": {
         "quorum": "0.334000000000000000",
