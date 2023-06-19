@@ -1,7 +1,7 @@
 KEY="mykey"
 KEY2="mykey2"
-CHAINID="highbury_7701-1"
-MONIKER="plex-validator"
+CHAINID="highbury_701-1"
+MONIKER="The Watchers"
 KEYRING="test"
 KEYALGO="eth_secp256k1"
 LOGLEVEL="info"
@@ -70,32 +70,32 @@ if [[ $1 == "pending" ]]; then
 fi
 
 # Allocate genesis accounts (cosmos formatted addresses)
-black add-genesis-account $KEY 964723926400000000000000000afury --keyring-backend $KEYRING
-
+black add-genesis-account $KEY 2000000400000000000000000afury --keyring-backend $KEYRING
+black add-genesis-account $KEY2 2000000400000000000000000afury --keyring-backend $KEYRING
                                  
 # Update total supply with claim values
 #validators_supply=$(cat $HOME/.black/config/genesis.json | jq -r '.app_state["bank"]["supply"][0]["amount"]')
 # Bc is required to add this big numbers
 # total_supply=$(bc <<< "$amount_to_claim+$validators_supply")
-total_supply=420000000000000000000000000
-cat $HOME/.black/config/genesis.json | jq -r --arg total_supply "$total_supply" '.app_state["bank"]["supply"][0]["amount"]=$total_supply' > $HOME/.black/config/tmp_genesis.json && mv $HOME/.black/config/tmp_genesis.json $HOME/.black/config/genesis.json
+#total_supply=420000000000000000000000000
+#cat $HOME/.black/config/genesis.json | jq -r --arg total_supply "$total_supply" '.app_state["bank"]["supply"][0]["amount"]=$total_supply' > $HOME/.black/config/tmp_genesis.json && mv $HOME/.black/config/tmp_genesis.json $HOME/.black/config/genesis.json
 
 echo $KEYRING
-echo $KEY
+echo $KEY2
 # Sign genesis transaction
-black gentx $KEY2 100000000000000000000000afury --keyring-backend $KEYRING --chain-id $CHAINID
+black gentx $KEY2 2000000400000000000000afury --keyring-backend $KEYRING --chain-id $CHAINID
 #black gentx $KEY2 1000000000000000000000afury --keyring-backend $KEYRING --chain-id $CHAINID
 
 # Collect genesis tx
-black collect-gentxs
+#black collect-gentxs
 
 # Run this to ensure everything worked and that the genesis file is setup correctly
-black validate-genesis
+#black validate-genesis
 
-if [[ $1 == "pending" ]]; then
-  echo "pending mode is on, please wait for the first block committed."
-fi
+# if [[ $1 == "pending" ]]; then
+#  echo "pending mode is on, please wait for the first block committed."
+# fi
 
 # Start the node (remove the --pruning=nothing flag if historical queries are not needed)
-black start --pruning=nothing --trace --log_level trace --minimum-gas-prices=1.000afury --json-rpc.api eth,txpool,personal,net,debug,web3 --rpc.laddr "tcp://0.0.0.0:26657" --api.enable true --api.enabled-unsafe-cors true
+#black start --pruning=nothing --trace --log_level trace --minimum-gas-prices=1.000afury --json-rpc.api eth,txpool,personal,net,debug,web3 --rpc.laddr "tcp://0.0.0.0:26657" --api.enable true --api.enabled-unsafe-cors true
 
