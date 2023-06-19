@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2023-06-19T05:08:42.042083034Z",
+  "genesis_time": "2023-06-19T06:31:50.306928636Z",
   "chain_id": "highbury_710-1",
   "initial_height": "1",
   "consensus_params": {
@@ -34,7 +34,7 @@
         {
           "@type": "/ethermint.types.v1.EthAccount",
           "base_account": {
-            "address": "black1t70uv2gcf5tlm3tjxu7thfydjctlmm8md56jgh",
+            "address": "black1vq5vc6prvseqmdkaepdas3fmd9pvqmmmp5sxrx",
             "pub_key": null,
             "account_number": "0",
             "sequence": "0"
@@ -44,7 +44,7 @@
         {
           "@type": "/ethermint.types.v1.EthAccount",
           "base_account": {
-            "address": "black162nywlc0u69fznajrrfh09n3e7pc6y06aztxnc",
+            "address": "black1n2sqxdmdddq65j82w48v4czusyayxar0nznmc5",
             "pub_key": null,
             "account_number": "0",
             "sequence": "0"
@@ -54,7 +54,7 @@
         {
           "@type": "/ethermint.types.v1.EthAccount",
           "base_account": {
-            "address": "black1mjcr3gv9gqycm2vvu84l68euvyz95ze4kduew8",
+            "address": "black1jl2zcz32npjgs88vd60xv5qan5rtzh4xena7na",
             "pub_key": null,
             "account_number": "0",
             "sequence": "0"
@@ -64,7 +64,7 @@
         {
           "@type": "/ethermint.types.v1.EthAccount",
           "base_account": {
-            "address": "black1qjcype2yqjet07yx4t4r84q27t06q4g8fde5as",
+            "address": "black19umlsn9fc3ytfe9s3l9dez4z2ujjljqjj3lcu0",
             "pub_key": null,
             "account_number": "0",
             "sequence": "0"
@@ -74,7 +74,7 @@
         {
           "@type": "/ethermint.types.v1.EthAccount",
           "base_account": {
-            "address": "black16hhfp08ts5lxc2ghc63wqxe2y77tgpfkjdw6qy",
+            "address": "black1t0lzffhd5yhclj4pmhxp4h82nxfr08c58ezysy",
             "pub_key": null,
             "account_number": "0",
             "sequence": "0"
@@ -84,7 +84,7 @@
         {
           "@type": "/ethermint.types.v1.EthAccount",
           "base_account": {
-            "address": "black1s0y60wj966efr3sqxvkkgp2flnk0kjaczyxwhh",
+            "address": "black120fza5vukwmaksphtqesrh4kqxf8er6emtjgvd",
             "pub_key": null,
             "account_number": "0",
             "sequence": "0"
@@ -2457,6 +2457,15 @@
           ]
         },
         {
+          "address": "black1vq5vc6prvseqmdkaepdas3fmd9pvqmmmp5sxrx",
+          "coins": [
+            {
+              "denom": "afury",
+              "amount": "370446789000000000000"
+            }
+          ]
+        },
+        {
           "address": "black1vvgh02zkh4qf9hydk0walw9nyx4udemrx5pp6g",
           "coins": [
             {
@@ -2768,6 +2777,15 @@
             {
               "denom": "afury",
               "amount": "51474876713"
+            }
+          ]
+        },
+        {
+          "address": "black1n2sqxdmdddq65j82w48v4czusyayxar0nznmc5",
+          "coins": [
+            {
+              "denom": "afury",
+              "amount": "64808383230000000000000000"
             }
           ]
         },
@@ -3204,69 +3222,6 @@
           ]
         },
         {
-          "address": "black162nywlc0u69fznajrrfh09n3e7pc6y06aztxnc",
-          "coins": [
-            {
-              "denom": "afury",
-              "amount": "64808383230000000000000000"
-            }
-          ]
-        },
-        {
-          "address": "black162nywlc0u69fznajrrfh09n3e7pc6y06aztxnc",
-          "coins": [
-            {
-              "denom": "afury",
-              "amount": "64808383230000000000000000"
-            }
-          ]
-        },
-        {
-          "address": "black1t70uv2gcf5tlm3tjxu7thfydjctlmm8md56jgh",
-          "coins": [
-            {
-              "denom": "afury",
-              "amount": "64808383230000000000000000"
-            }
-          ]
-        },
-        {
-          "address": "black1mjcr3gv9gqycm2vvu84l68euvyz95ze4kduew8",
-          "coins": [
-            {
-              "denom": "afury",
-              "amount": "64808383230000000000000000"
-            }
-          ]
-        },
-        {
-          "address": "black1qjcype2yqjet07yx4t4r84q27t06q4g8fde5as",
-          "coins": [
-            {
-              "denom": "afury",
-              "amount": "64808383230000000000000000"
-            }
-          ]
-        },
-        {
-          "address": "black1s0y60wj966efr3sqxvkkgp2flnk0kjaczyxwhh",
-          "coins": [
-            {
-              "denom": "afury",
-              "amount": "64808383230000000000000000"
-            }
-          ]
-        },
-        {
-          "address": "black16hhfp08ts5lxc2ghc63wqxe2y77tgpfkjdw6qy",
-          "coins": [
-            {
-              "denom": "afury",
-              "amount": "64808383230000000000000000"
-            }
-          ]
-        },
-        {
           "address": "black162cxa76zpvag4a05da0yhu69awfy35w8z3w0da",
           "coins": [
             {
@@ -3362,15 +3317,6 @@
             {
               "denom": "afury",
               "amount": "214286250000"
-            }
-          ]
-        },
-        {
-          "address": "black1axe72c82lxyqwywj4emz9628rnqk8sprrzgyey",
-          "coins": [
-            {
-              "denom": "afury",
-              "amount": "370446789000000000000"
             }
           ]
         },
@@ -3555,7 +3501,12 @@
           ]
         }
       ],
-      "supply": [],
+      "supply": [
+        {
+          "denom": "afury",
+          "amount": "64808753676844723168057999"
+        }
+      ],
       "denom_metadata": []
     },
     "capability": {
@@ -3565,7 +3516,7 @@
     "crisis": {
       "constant_fee": {
         "denom": "afury",
-        "amount": "10000"
+        "amount": "1000"
       }
     },
     "csr": {
@@ -4059,10 +4010,10 @@
             "amount": "10000000"
           }
         ],
-        "max_deposit_period": "1728s"
+        "max_deposit_period": "172800s"
       },
       "voting_params": {
-        "voting_period": "720s"
+        "voting_period": "7200s"
       },
       "tally_params": {
         "quorum": "0.334000000000000000",
