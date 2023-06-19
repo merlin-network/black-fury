@@ -311,7 +311,7 @@
                 }
               }
             ],
-            "memo": "0b7622ca3977adeee33085bb046febe02d9be63d@34.124.240.49:26656",
+            "memo": "0b7622ca3977adeee33085bb046febe02d9be63d@34.75.78.143:26656",
             "timeout_height": "0",
             "extension_options": [],
             "non_critical_extension_options": []
@@ -372,7 +372,7 @@
                 }
               }
             ],
-            "memo": "271e84c5e4af829ecd470a5d5f64c884a2916d8c@34.124.240.49:26656",
+            "memo": "271e84c5e4af829ecd470a5d5f64c884a2916d8c@34.165.151.138:26656",
             "timeout_height": "0",
             "extension_options": [],
             "non_critical_extension_options": []
@@ -433,7 +433,7 @@
                 }
               }
             ],
-            "memo": "78cc11676cb834268953ff2ce0f4282346294d5f@34.124.240.49:26656",
+            "memo": "78cc11676cb834268953ff2ce0f4282346294d5f@34.90.61.99:26656",
             "timeout_height": "0",
             "extension_options": [],
             "non_critical_extension_options": []
@@ -555,7 +555,7 @@
                 }
               }
             ],
-            "memo": "8e1ba251a0bbda231e7e4709eadb25dbbae467e2@34.124.240.49:26656",
+            "memo": "8e1ba251a0bbda231e7e4709eadb25dbbae467e2@35.200.104.35:26656",
             "timeout_height": "0",
             "extension_options": [],
             "non_critical_extension_options": []
