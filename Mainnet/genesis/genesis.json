@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2023-06-19T05:15:17.787915525Z",
+  "genesis_time": "2023-06-19T05:00:04.332546318Z",
   "chain_id": "highbury_710-1",
   "initial_height": "1",
   "consensus_params": {
@@ -34,7 +34,7 @@
         {
           "@type": "/ethermint.types.v1.EthAccount",
           "base_account": {
-            "address": "black18sgztq94rh0gw76grhcwthgwp7q6wy3venl38u",
+            "address": "black1j6g6zkdwr8u0wtfaun67x6pue6jx9vh32xp7gm",
             "pub_key": null,
             "account_number": "0",
             "sequence": "0"
@@ -44,7 +44,7 @@
         {
           "@type": "/ethermint.types.v1.EthAccount",
           "base_account": {
-            "address": "black1qjcype2yqjet07yx4t4r84q27t06q4g8fde5as",
+            "address": "black1s0y60wj966efr3sqxvkkgp2flnk0kjaczyxwhh",
             "pub_key": null,
             "account_number": "0",
             "sequence": "0"
@@ -1899,15 +1899,6 @@
           ]
         },
         {
-          "address": "black1qjcype2yqjet07yx4t4r84q27t06q4g8fde5as",
-          "coins": [
-            {
-              "denom": "afury",
-              "amount": "64808383230000000000000000"
-            }
-          ]
-        },
-        {
           "address": "black1q5cddxnk7yqxc4fjfmnpxhygkcl3uw6s7y6efz",
           "coins": [
             {
@@ -2246,15 +2237,6 @@
             {
               "denom": "afury",
               "amount": "21023561644"
-            }
-          ]
-        },
-        {
-          "address": "black18sgztq94rh0gw76grhcwthgwp7q6wy3venl38u",
-          "coins": [
-            {
-              "denom": "afury",
-              "amount": "370446789000000000000"
             }
           ]
         },
@@ -2700,6 +2682,15 @@
           ]
         },
         {
+          "address": "black1s0y60wj966efr3sqxvkkgp2flnk0kjaczyxwhh",
+          "coins": [
+            {
+              "denom": "afury",
+              "amount": "64808383230000000000000000"
+            }
+          ]
+        },
+        {
           "address": "black1ssfpxgkzt4yj0unmzx0cmrx6mhm5kl0gfyj3kl",
           "coins": [
             {
@@ -2768,6 +2759,15 @@
             {
               "denom": "afury",
               "amount": "30047567124"
+            }
+          ]
+        },
+        {
+          "address": "black1j6g6zkdwr8u0wtfaun67x6pue6jx9vh32xp7gm",
+          "coins": [
+            {
+              "denom": "afury",
+              "amount": "370446789000000000000"
             }
           ]
         },
