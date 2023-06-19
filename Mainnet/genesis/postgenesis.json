@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2023-06-19T18:38:13.072838592Z",
+  "genesis_time": "2023-06-19T19:57:51.960761355Z",
   "chain_id": "highbury_710-1",
   "initial_height": "1",
   "consensus_params": {
@@ -34,7 +34,7 @@
         {
           "@type": "/ethermint.types.v1.EthAccount",
           "base_account": {
-            "address": "black1gwcufvfr395hjdqp36d729ls25fuqguzlacts4",
+            "address": "black1jprmr0ytf6dn2nqhdkqx59wk7aavs5wxmswejp",
             "pub_key": null,
             "account_number": "0",
             "sequence": "0"
@@ -44,7 +44,7 @@
         {
           "@type": "/ethermint.types.v1.EthAccount",
           "base_account": {
-            "address": "black18w34ncrzrc9l5qpx9x5dhaqyh0puqwrja0eue2",
+            "address": "black1k5mr3nxs0ssnp9vqk8qxxeflpcxn8nthjdpvca",
             "pub_key": null,
             "account_number": "0",
             "sequence": "0"
@@ -54,7 +54,7 @@
         {
           "@type": "/ethermint.types.v1.EthAccount",
           "base_account": {
-            "address": "black16t4wy7vjhh9aeruqse6px6pct67m83elqw2ege",
+            "address": "black1egn5psxn0dmakm38gdr84v77y5n4sjwgm9ua5f",
             "pub_key": null,
             "account_number": "0",
             "sequence": "0"
@@ -64,7 +64,7 @@
         {
           "@type": "/ethermint.types.v1.EthAccount",
           "base_account": {
-            "address": "black1e5wgn5y87sn9uldtyjqapf0n8y6a9egun3eda2",
+            "address": "black1tfkr5acuadcxvvqjnxkt7t657km8ghrpexk8rv",
             "pub_key": null,
             "account_number": "0",
             "sequence": "0"
@@ -74,7 +74,7 @@
         {
           "@type": "/ethermint.types.v1.EthAccount",
           "base_account": {
-            "address": "black1y28mgwhku39sjykru3ygst7dyr0jncudkl6qvu",
+            "address": "black1ykzxdsrwtn2ewfu3qahqmxqxtdn8nvu04q9se3",
             "pub_key": null,
             "account_number": "0",
             "sequence": "0"
@@ -84,13 +84,14 @@
         {
           "@type": "/ethermint.types.v1.EthAccount",
           "base_account": {
-            "address": "black1xjsfn397n7eng093wv83fecvljxuc4yptq2cz3",
+            "address": "black1vp9dmz59093vg4px79t6pcmtxjhfjsugmr47ez",
             "pub_key": null,
             "account_number": "0",
             "sequence": "0"
           },
           "code_hash": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
-        }
+        },
+        
       ]
     },
     "authz": {
@@ -103,7 +104,7 @@
       },
       "balances": [
         {
-          "address": "black1xjsfn397n7eng093wv83fecvljxuc4yptq2cz3",
+          "address": "black1jprmr0ytf6dn2nqhdkqx59wk7aavs5wxmswejp",
           "coins": [
             {
               "denom": "afury",
@@ -112,7 +113,7 @@
           ]
         },
         {
-          "address": "black18w34ncrzrc9l5qpx9x5dhaqyh0puqwrja0eue2",
+          "address": "black1k5mr3nxs0ssnp9vqk8qxxeflpcxn8nthjdpvca",
           "coins": [
             {
               "denom": "afury",
@@ -121,7 +122,7 @@
           ]
         },
         {
-          "address": "black16t4wy7vjhh9aeruqse6px6pct67m83elqw2ege",
+          "address": "black1egn5psxn0dmakm38gdr84v77y5n4sjwgm9ua5f",
           "coins": [
             {
               "denom": "afury",
@@ -130,7 +131,7 @@
           ]
         },
         {
-          "address": "black1e5wgn5y87sn9uldtyjqapf0n8y6a9egun3eda2",
+          "address": "black1tfkr5acuadcxvvqjnxkt7t657km8ghrpexk8rv",
           "coins": [
             {
               "denom": "afury",
@@ -139,7 +140,7 @@
           ]
         },
         {
-          "address": "black1y28mgwhku39sjykru3ygst7dyr0jncudkl6qvu",
+          "address": "black1ykzxdsrwtn2ewfu3qahqmxqxtdn8nvu04q9se3",
           "coins": [
             {
               "denom": "afury",
@@ -148,7 +149,7 @@
           ]
         },
         {
-          "address": "black1gwcufvfr395hjdqp36d729ls25fuqguzlacts4",
+          "address": "black1vp9dmz59093vg4px79t6pcmtxjhfjsugmr47ez",
           "coins": [
             {
               "denom": "afury",
@@ -167,7 +168,7 @@
     "crisis": {
       "constant_fee": {
         "denom": "afury",
-        "amount": "10000000"
+        "amount": "1000000"
       }
     },
     "csr": {
@@ -294,7 +295,7 @@
             "amount": "10000000"
           }
         ],
-        "max_deposit_period": "1728s"
+        "max_deposit_period": "1720s"
       },
       "voting_params": {
         "voting_period": "720s"
