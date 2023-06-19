@@ -34,7 +34,7 @@
         {
           "@type": "/ethermint.types.v1.EthAccount",
           "base_account": {
-            "address": "black1axe72c82lxyqwywj4emz9628rnqk8sprrzgyey",
+            "address": "black1t70uv2gcf5tlm3tjxu7thfydjctlmm8md56jgh",
             "pub_key": null,
             "account_number": "0",
             "sequence": "0"
@@ -54,7 +54,7 @@
         {
           "@type": "/ethermint.types.v1.EthAccount",
           "base_account": {
-            "address": "black1jl2zcz32npjgs88vd60xv5qan5rtzh4xena7na",
+            "address": "black1mjcr3gv9gqycm2vvu84l68euvyz95ze4kduew8",
             "pub_key": null,
             "account_number": "0",
             "sequence": "0"
@@ -64,7 +64,7 @@
         {
           "@type": "/ethermint.types.v1.EthAccount",
           "base_account": {
-            "address": "black19umlsn9fc3ytfe9s3l9dez4z2ujjljqjj3lcu0",
+            "address": "black1qjcype2yqjet07yx4t4r84q27t06q4g8fde5as",
             "pub_key": null,
             "account_number": "0",
             "sequence": "0"
@@ -74,7 +74,7 @@
         {
           "@type": "/ethermint.types.v1.EthAccount",
           "base_account": {
-            "address": "black1t0lzffhd5yhclj4pmhxp4h82nxfr08c58ezysy",
+            "address": "black16hhfp08ts5lxc2ghc63wqxe2y77tgpfkjdw6qy",
             "pub_key": null,
             "account_number": "0",
             "sequence": "0"
@@ -84,7 +84,7 @@
         {
           "@type": "/ethermint.types.v1.EthAccount",
           "base_account": {
-            "address": "black120fza5vukwmaksphtqesrh4kqxf8er6emtjgvd",
+            "address": "black1s0y60wj966efr3sqxvkkgp2flnk0kjaczyxwhh",
             "pub_key": null,
             "account_number": "0",
             "sequence": "0"
@@ -3213,6 +3213,60 @@
           ]
         },
         {
+          "address": "black162nywlc0u69fznajrrfh09n3e7pc6y06aztxnc",
+          "coins": [
+            {
+              "denom": "afury",
+              "amount": "64808383230000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "black1t70uv2gcf5tlm3tjxu7thfydjctlmm8md56jgh",
+          "coins": [
+            {
+              "denom": "afury",
+              "amount": "64808383230000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "black1mjcr3gv9gqycm2vvu84l68euvyz95ze4kduew8",
+          "coins": [
+            {
+              "denom": "afury",
+              "amount": "64808383230000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "black1qjcype2yqjet07yx4t4r84q27t06q4g8fde5as",
+          "coins": [
+            {
+              "denom": "afury",
+              "amount": "64808383230000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "black1s0y60wj966efr3sqxvkkgp2flnk0kjaczyxwhh",
+          "coins": [
+            {
+              "denom": "afury",
+              "amount": "64808383230000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "black16hhfp08ts5lxc2ghc63wqxe2y77tgpfkjdw6qy",
+          "coins": [
+            {
+              "denom": "afury",
+              "amount": "64808383230000000000000000"
+            }
+          ]
+        },
+        {
           "address": "black162cxa76zpvag4a05da0yhu69awfy35w8z3w0da",
           "coins": [
             {
@@ -3501,12 +3555,7 @@
           ]
         }
       ],
-      "supply": [
-        {
-          "denom": "afury",
-          "amount": "64808753676844723168057999"
-        }
-      ],
+      "supply": [],
       "denom_metadata": []
     },
     "capability": {
@@ -3516,7 +3565,7 @@
     "crisis": {
       "constant_fee": {
         "denom": "afury",
-        "amount": "1000"
+        "amount": "10000"
       }
     },
     "csr": {
@@ -3643,10 +3692,10 @@
             "amount": "10000000"
           }
         ],
-        "max_deposit_period": "172800s"
+        "max_deposit_period": "1728s"
       },
       "voting_params": {
-        "voting_period": "7200s"
+        "voting_period": "720s"
       },
       "tally_params": {
         "quorum": "0.334000000000000000",
